@@ -1388,6 +1388,9 @@ function renderDetay(h) {
         '<div style="margin-bottom:8px"><strong>📈 Türk yatırımcı için etki:</strong> ' + (y.turkYatirimciEtki||'') + '</div>' +
         '<div style="margin-bottom:8px"><strong>⚠️ Riskler:</strong> ' + (y.riskler||'') + '</div>' +
         '<div style="margin-bottom:8px"><strong>💡 Fırsatlar:</strong> ' + (y.firsatlar||'') + '</div>' +
+        (Array.isArray(y.izlenecekGostergeler) && y.izlenecekGostergeler.length
+          ? '<div style="margin-bottom:8px"><strong>📅 İzlenecek göstergeler:</strong><ul style="margin:6px 0 0 18px;padding:0">' + y.izlenecekGostergeler.map(g => '<li style="margin-bottom:3px">' + g + '</li>').join('') + '</ul></div>'
+          : '') +
         '<div style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic">' + (y.uyari||'Bu yorum yatırım tavsiyesi değildir.') + '</div>' +
         '</div>';
     } else {
