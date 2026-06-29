@@ -1,0 +1,2422 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AnlıkHaber — Son Dakika Finans ve Piyasa Haberleri</title>
+<meta name="description" content="Türkiye ve dünyadan anlık finans haberleri, borsa, döviz, kripto ve ekonomi gelişmeleri. BIST100, dolar, altın, Bitcoin anlık takip.">
+<meta name="keywords" content="finans haberleri, borsa haberleri, BIST100, dolar kuru, altın fiyatı, kripto para, ekonomi haberleri, anlık haber">
+<meta name="author" content="AnlıkHaber">
+<meta name="robots" content="index, follow">
+<meta name="language" content="Turkish">
+<meta name="revisit-after" content="1 days">
+<link rel="canonical" href="https://anlikhaber.com">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AnlıkHaber">
+<meta property="og:title" content="AnlıkHaber — Son Dakika Finans ve Piyasa Haberleri">
+<meta property="og:description" content="Türkiye ve dünyadan anlık finans haberleri, borsa, döviz, kripto ve ekonomi gelişmeleri.">
+<meta property="og:url" content="https://anlikhaber.com">
+<meta property="og:image" content="https://anlikhaber.com/og-image.jpg">
+<meta property="og:locale" content="tr_TR">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@anlikhaber22">
+<meta name="twitter:title" content="AnlıkHaber — Son Dakika Finans Haberleri">
+<meta name="twitter:description" content="Türkiye ve dünyadan anlık finans haberleri, borsa, döviz, kripto ve ekonomi gelişmeleri.">
+<meta name="twitter:image" content="https://anlikhaber.com/og-image.jpg">
+
+<!-- Schema.org NewsMediaOrganization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsMediaOrganization",
+  "name": "AnlıkHaber",
+  "url": "https://anlikhaber.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://anlikhaber.com/logo.png"
+  },
+  "description": "Türkiye ve dünyadan anlık finans haberleri, borsa, döviz, kripto ve ekonomi gelişmeleri.",
+  "sameAs": [
+    "https://x.com/anlikhaber22"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "reklam@anlikhaber.com",
+    "contactType": "customer service"
+  }
+}
+</script>
+
+<!-- Schema.org WebSite with SearchAction -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AnlıkHaber",
+  "url": "https://anlikhaber.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://anlikhaber.com/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://s3.tradingview.com">
+<link rel="preconnect" href="https://anlikhaber-backend-production.up.railway.app">
+<link rel="dns-prefetch" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0f;--surface:#13131a;--border:#1e1e2a;--accent:#e8c84a;--text:#f0ede8;--muted:#6b6b80;--green:#22c55e;--red:#ef4444}
+body.light-mode{--bg:#e8e4dc;--surface:#f5f2ec;--border:#ccc8be;--accent:#9a7600;--text:#0d0d0d;--muted:#444;--green:#15803d;--red:#b91c1c}
+body.light-mode header{background:#faf8f4;border-bottom:1px solid #ddd8ce}
+body.light-mode .ad-box,body.light-mode .ad-infeed,body.light-mode .ad-side,body.light-mode .left-ad{background:#ebe7de;border-color:#ccc8be;color:#444}
+body.light-mode .ad-box strong,body.light-mode .ad-infeed strong,body.light-mode .ad-side strong{color:#b8900a}
+body.light-mode .hero-visual::after{background:linear-gradient(to top,rgba(240,237,230,.97),transparent 55%)}
+body.light-mode .hero-title{color:#1a1a1a;text-shadow:none}
+body.light-mode .hero-desc{color:#555}
+body.light-mode .nl-item{background:#faf8f4}
+body.light-mode .nl-item:hover{background:#f0ede6}
+body.light-mode .nl-title{color:#1a1a1a}
+body.light-mode .nl-meta{color:#666}
+body.light-mode .news-card{background:#faf8f4;border-color:#ddd8ce}
+body.light-mode .nc-title{color:#1a1a1a}
+body.light-mode .nc-source{color:#666}
+body.light-mode .email-widget input{background:#f0ede6;color:#1c1c1c;border-color:#ccc8be}
+body.light-mode .email-widget input::placeholder{color:#999}
+body.light-mode .widget{background:#faf8f4;border-color:#ddd8ce}
+body.light-mode .widget-title{color:#555}
+body.light-mode .trend-item{background:#faf8f4}
+body.light-mode .trend-item:hover{background:#f0ede6}
+body.light-mode .trend-name{color:#1a1a1a}
+body.light-mode .trend-count{color:#666}
+body.light-mode .nc-cat{color:#b8900a}
+body.light-mode .breaking-bar{background:#a81c1c}
+body.light-mode .load-more{border-color:#ddd8ce;color:#666}
+body.light-mode .load-more:hover{border-color:#b8900a;color:#b8900a}
+body.light-mode .cat-tab{color:#666}
+body.light-mode .cat-tab.active{color:#b8900a;border-bottom-color:#b8900a}
+body.light-mode .cat-tab:hover{color:#1c1c1c}
+body.light-mode nav a{color:#666}
+body.light-mode nav a:hover,body.light-mode nav a.active{color:#1c1c1c;border-bottom-color:#b8900a}
+body.light-mode .hero-card{background:#faf8f4;border-color:#ddd8ce}
+body.light-mode .hero-meta{color:#666}
+body.light-mode footer{border-top-color:#ddd8ce}
+body.light-mode .footer-links a{color:#666}
+body.light-mode .footer-bottom{color:#888;border-top-color:#ddd8ce}
+body.light-mode .bottom-ads{background:#f0ede6;border-top-color:#ddd8ce}
+
+/* THEME TOGGLE */
+.theme-toggle{background:transparent;border:1px solid var(--border);border-radius:20px;padding:5px 12px;cursor:pointer;font-size:12px;color:var(--muted);font-family:inherit;transition:all .2s;display:flex;align-items:center;gap:6px}
+.theme-toggle:hover{border-color:var(--accent);color:var(--accent)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min-height:100vh}
+
+/* TICKER - SABİT TABLO */
+.ticker-wrap{scrollbar-width:none}
+.market-cell{flex-shrink:0;padding:8px 16px;border-right:1px solid var(--border);min-width:90px;text-align:center;cursor:default}
+.market-cell:last-child{border-right:none}
+.mc-name{font-size:9px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:2px}
+.mc-price{font-size:13px;font-weight:700;color:var(--text);margin-bottom:1px}
+.mc-change{font-size:9px;font-weight:600}
+.mc-up{color:var(--green)}
+.mc-down{color:var(--red)}
+.mc-na{color:var(--muted)}
+.ticker-wrap{height:44px;overflow:hidden;background:#1a1a24;border-bottom:1px solid var(--border)}
+
+/* HEADER */
+header{border-bottom:1px solid var(--border);padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:60px;background:var(--bg)}
+.logo{font-family:'Playfair Display',serif;font-size:24px;font-weight:900;letter-spacing:-1px;display:flex;align-items:center;gap:10px}
+.logo span{color:var(--accent)}
+.logo-sub{font-size:10px;color:var(--muted);letter-spacing:1px;border-left:1px solid var(--border);padding-left:10px;font-family:'DM Sans',sans-serif;font-weight:400}
+nav{display:flex}
+nav a{color:var(--muted);text-decoration:none;font-size:12px;padding:0 12px;height:60px;display:flex;align-items:center;border-bottom:2px solid transparent;transition:all .2s}
+nav a:hover,nav a.active{color:var(--text);border-bottom-color:var(--accent)}
+.live-badge{background:var(--red);color:#fff;font-size:10px;font-weight:600;padding:4px 10px;border-radius:20px;letter-spacing:1px;animation:pulse 2s infinite;text-transform:uppercase}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+
+/* AD LEADERBOARD */
+.ad-leaderboard{background:#0d0d16;border-bottom:1px solid var(--border);padding:10px 32px;display:flex;justify-content:center}
+.ad-box{background:#0d0d16;border:1px solid var(--border);border-radius:8px;text-align:center;cursor:pointer;transition:border-color .2s;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px}
+.ad-box:hover{border-color:var(--accent)}
+.ad-label{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);opacity:.6}
+.ad-box strong{color:var(--accent);font-size:13px}
+.ad-box p{font-size:10px;color:var(--muted);line-height:1.5}
+
+/* BREAKING */
+.breaking-bar{background:#c0392b;padding:7px 32px;display:flex;align-items:center;gap:10px;font-size:13px}
+.breaking-tag{background:#fff;color:#c0392b;font-size:9px;font-weight:700;padding:3px 8px;border-radius:3px;letter-spacing:1px;flex-shrink:0;text-transform:uppercase}
+#breakingText{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:calc(100% - 80px)}
+
+/* MAIN LAYOUT */
+.container{max-width:1320px;margin:0 auto;padding:24px 32px}
+.main-grid{display:grid;grid-template-columns:180px 1fr 300px;gap:24px}
+
+/* LEFT SIDEBAR */
+.left-sidebar{display:flex;flex-direction:column;gap:16px}
+.left-ad{border:1px solid var(--border);border-radius:8px;background:#0d0d16;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;transition:border-color .2s;text-align:center;padding:12px}
+.left-ad:hover{border-color:var(--accent)}
+
+/* CAT TABS */
+.cat-row{display:flex;gap:0;border-bottom:1px solid var(--border);margin-bottom:20px;overflow-x:auto}
+.cat-tab{padding:8px 14px;font-size:12px;font-weight:500;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;white-space:nowrap;transition:all .2s}
+.cat-tab:hover{color:var(--text)}
+.cat-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* HERO */
+.hero-card{background:var(--surface);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:16px;cursor:pointer;transition:border-color .2s}
+.hero-card:hover{border-color:var(--accent)}
+.hero-visual{background-color:#13131a;height:240px;background:linear-gradient(145deg,#0d1117,#1a1230);display:flex;align-items:flex-end;padding:20px;position:relative;overflow:hidden;background-size:cover;background-position:center}
+.hero-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,15,.92),transparent 60%)}
+.hero-cat-badge{position:absolute;top:16px;left:16px;background:var(--accent);color:#0a0a0f;font-size:9px;font-weight:700;padding:4px 10px;border-radius:4px;letter-spacing:1px;text-transform:uppercase;z-index:2}
+.hero-time{position:absolute;top:16px;right:16px;background:rgba(0,0,0,.5);color:var(--muted);font-size:10px;padding:3px 8px;border-radius:4px;z-index:2}
+.hero-title{font-family:'Playfair Display',serif;font-size:21px;font-weight:700;line-height:1.3;color:#fff;position:relative;z-index:2}
+.hero-body{padding:16px 20px}
+.hero-meta{font-size:11px;color:var(--muted);margin-bottom:8px}
+.hero-source{color:var(--accent);font-weight:500}
+.hero-desc{font-size:13px;line-height:1.7;color:#b8b5b0;margin-bottom:10px}
+.read-link{color:var(--accent);font-size:12px;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(232,200,74,.3)}
+.ai-note-small{font-size:10px;color:var(--muted);opacity:.6;margin-top:6px;font-style:italic}
+
+/* AD INFEED */
+.ad-infeed{width:100%;padding:12px;min-height:70px;margin:12px 0;border-radius:8px;background:#0d0d16;border:1px solid var(--border);cursor:pointer;text-align:center}
+.ad-infeed:hover{border-color:var(--accent)}
+.ad-infeed strong{color:var(--accent);font-size:12px;display:block;margin-bottom:3px}
+.ad-infeed span{font-size:10px;color:var(--muted)}
+
+/* NEWS GRID */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.news-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;cursor:pointer;transition:all .2s;overflow:hidden}
+.news-card:hover{border-color:var(--accent);transform:translateY(-1px)}
+.news-thumb{width:100%;height:120px;object-fit:cover;display:block}
+.news-thumb-placeholder{width:100%;height:90px;background:linear-gradient(135deg,#1a1a2e,#1e1e2a);display:flex;align-items:center;justify-content:center;font-size:32px}
+.news-body{padding:10px 12px}
+.nc-top{display:flex;justify-content:space-between;margin-bottom:5px}
+.nc-cat{font-size:10px;font-weight:600;color:var(--accent);letter-spacing:1px;text-transform:uppercase}
+.nc-time{font-size:10px;color:var(--muted)}
+.nc-title{font-size:12px;font-weight:500;line-height:1.5;margin-bottom:5px}
+.nc-source{font-size:10px;color:var(--muted)}
+.nc-ai{font-size:9px;color:var(--muted);opacity:.6;font-style:italic}
+
+/* NEWS LIST */
+.news-list{display:flex;flex-direction:column;gap:1px;background:var(--border);border-radius:8px;overflow:hidden;margin-bottom:12px}
+.nl-item{background:var(--surface);padding:12px 14px;cursor:pointer;transition:background .15s;display:flex;gap:12px;align-items:flex-start}
+.nl-item:hover{background:#16161f}
+.nl-num{font-size:16px;font-weight:700;color:var(--border);font-family:'Playfair Display',serif;min-width:20px;flex-shrink:0;margin-top:2px}
+.nl-cat{font-size:9px;color:var(--accent);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:3px}
+.nl-title{font-size:12px;font-weight:500;line-height:1.4;margin-bottom:3px}
+.nl-meta{font-size:10px;color:var(--muted)}
+
+/* RIGHT SIDEBAR */
+.right-sidebar{display:flex;flex-direction:column;gap:16px}
+.widget{background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden}
+.widget-header{padding:12px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between}
+.widget-title{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.widget-link{font-size:10px;color:var(--accent);text-decoration:none}
+
+/* TradingView z-index fix */
+.tradingview-widget-container iframe { position: relative !important; z-index: 1 !important; }
+.tv-widget-wrap { overflow: hidden; position: relative; z-index: 1; }
+
+/* TradingView Market Widget */
+.tv-widget-wrap{overflow:hidden;border-radius:0 0 8px 8px}
+
+/* AD SIDEBAR */
+.ad-side{border:1px solid var(--border);border-radius:8px;background:#0d0d16;padding:16px;text-align:center;cursor:pointer;transition:border-color .2s;min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+.ad-side:hover{border-color:var(--accent)}
+.ad-side strong{color:var(--accent);font-size:14px}
+.ad-side p{font-size:11px;color:var(--muted);line-height:1.6}
+
+/* EMAIL */
+.email-widget{padding:14px}
+.email-widget p{font-size:11px;color:var(--muted);line-height:1.6;margin-bottom:10px}
+.email-widget input{width:100%;background:#0a0a0f;border:1px solid var(--border);border-radius:6px;padding:8px 10px;color:var(--text);font-size:12px;font-family:inherit;margin-bottom:7px;outline:none;transition:border-color .2s}
+.email-widget input:focus{border-color:var(--accent)}
+.email-widget button{width:100%;background:var(--accent);color:#0a0a0f;border:none;border-radius:6px;padding:8px;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit}
+.email-widget button:hover{opacity:.85}
+
+/* TRENDING */
+.trend-item{display:flex;align-items:center;gap:8px;padding:9px 14px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .15s}
+.trend-item:last-child{border:none}
+.trend-item:hover{background:#16161f}
+.trend-rank{font-size:16px;font-weight:700;color:var(--border);font-family:'Playfair Display',serif;min-width:18px}
+.trend-name{font-size:12px;font-weight:500}
+.trend-count{font-size:10px;color:var(--muted)}
+.trend-right{margin-left:auto;font-size:10px;color:var(--accent)}
+
+/* XBOT */
+.xbot{padding:14px}
+.xbot-status{display:flex;align-items:center;gap:6px;margin-bottom:8px}
+.xbot-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
+.xbot-label{font-size:11px;font-weight:500}
+.xbot-stats{font-size:10px;color:var(--muted);line-height:2}
+.xbot-stats b{color:var(--text)}
+.last-tweet{background:#0a0a0f;border-radius:6px;padding:8px 10px;font-size:10px;color:var(--muted);margin-top:8px;font-family:monospace;line-height:1.6;border-left:2px solid var(--accent)}
+
+/* BOTTOM ADS */
+.bottom-ads{background:#0a0a0f;border-top:1px solid var(--border);padding:14px 32px;display:flex;justify-content:center;gap:14px}
+.bottom-ads .ad-box{min-height:90px;flex:1;max-width:280px}
+
+/* HABER DETAY */
+.detay-page{display:none;max-width:860px;margin:0 auto;padding:32px 40px}
+.detay-page.active{display:block}
+.back-btn{display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-size:13px;font-weight:500;cursor:pointer;border:1px solid var(--border);border-radius:6px;padding:8px 14px;margin-bottom:20px;transition:border-color .2s;background:transparent;font-family:inherit}
+.back-btn:hover{border-color:var(--accent)}
+.detay-breadcrumb{font-size:12px;color:var(--muted);margin-bottom:14px}
+.detay-breadcrumb a{color:var(--accent);text-decoration:none;cursor:pointer}
+.detay-cat{display:inline-block;background:var(--accent);color:#0a0a0f;font-size:10px;font-weight:700;padding:4px 12px;border-radius:4px;letter-spacing:1px;text-transform:uppercase;margin-bottom:14px}
+.detay-title{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;line-height:1.3;margin-bottom:14px}
+.detay-meta{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--muted);margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.detay-source{color:var(--accent);font-weight:500}
+.detay-ai-note{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:10px 14px;font-size:12px;color:var(--muted);margin-bottom:20px;display:flex;align-items:center;gap:8px}
+.detay-ad{background:#0d0d16;border:1px solid var(--border);border-radius:8px;padding:14px;text-align:center;margin-bottom:20px;cursor:pointer}
+.detay-ad strong{color:var(--accent);display:block;margin-bottom:3px;font-size:13px}
+.detay-ad span{font-size:10px;color:var(--muted)}
+.detay-content{font-size:15px;line-height:1.9;color:#c8c5c0;margin-bottom:20px}
+body.light-mode .detay-content{color:#1a1a1a}
+body.light-mode .detay-title{color:#0d0d0d}
+body.light-mode .detay-source{color:#9a7600}
+body.light-mode .detay-meta{color:#444;border-bottom-color:#ccc8be}
+body.light-mode .detay-ai-note{background:#ebe7de;border-color:#ccc8be;color:#333}
+body.light-mode .detay-kaynak{background:#ebe7de;border-color:#ccc8be;color:#333}
+body.light-mode .detay-cat{background:#9a7600;color:#fff}
+body.light-mode .detay-breadcrumb{color:#444}
+body.light-mode .ilgili-card{background:#f5f2ec;border-color:#ccc8be}
+body.light-mode .ilgili-title{color:#1a1a1a}
+body.light-mode .share-btn{border-color:#ccc8be;color:#333}
+body.light-mode .share-btn:hover{border-color:#9a7600;color:#9a7600}
+.detay-content p{margin-bottom:14px}
+.detay-kaynak{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:14px;font-size:12px;color:var(--muted);margin-bottom:20px}
+.detay-kaynak a{color:var(--accent);text-decoration:none}
+.detay-share{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap}
+.share-btn{border:1px solid var(--border);background:transparent;color:var(--text);border-radius:6px;padding:8px 14px;font-size:12px;font-weight:500;cursor:pointer;font-family:inherit;transition:all .2s}
+.share-btn:hover{border-color:var(--accent);color:var(--accent)}
+.ilgili-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.ilgili-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px;cursor:pointer;transition:border-color .2s}
+.ilgili-card:hover{border-color:var(--accent)}
+.ilgili-cat{font-size:9px;color:var(--accent);font-weight:600;letter-spacing:1px;text-transform:uppercase;margin-bottom:5px}
+.ilgili-title{font-size:12px;font-weight:500;line-height:1.4}
+
+/* HABER SENTIMENT BARI */
+.sentiment-bar-wrap{margin-top:6px;display:flex;align-items:center;gap:6px}
+.sentiment-bar-bg{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden;position:relative}
+.sentiment-bar-fill{height:100%;border-radius:2px;transition:width .5s ease}
+.sentiment-score-label{font-size:9px;font-weight:600;white-space:nowrap;min-width:48px;text-align:right}
+.sentiment-info{font-size:9px;color:var(--muted);cursor:help;opacity:.7}
+
+/* ÖZEL SAYFALAR */
+.ozel-sayfa{display:none}
+.ozel-sayfa.active{display:block}
+.kurlar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.kur-kart{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center}
+.kur-isim{font-size:10px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+.kur-fiyat{font-size:24px;font-weight:700;color:var(--text);margin-bottom:4px}
+.kur-degisim{font-size:11px;font-weight:600}
+.kur-guncelleme{font-size:9px;color:var(--muted);margin-top:4px}
+
+/* DERİN ANALİZ */
+.analiz-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px;margin-bottom:16px;position:relative;overflow:hidden}
+.analiz-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--accent)}
+.analiz-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(232,200,74,.1);border:1px solid rgba(232,200,74,.3);border-radius:6px;padding:4px 10px;font-size:10px;font-weight:700;color:var(--accent);letter-spacing:1px;margin-bottom:10px}
+.analiz-title{font-size:14px;font-weight:600;line-height:1.5;margin-bottom:12px;color:var(--text)}
+.analiz-ozet{font-size:13px;color:#b8b5b0;line-height:1.8;margin-bottom:14px}
+.analiz-etkiler{background:#0a0a0f;border-radius:8px;padding:12px;margin-bottom:12px}
+.analiz-etki-title{font-size:10px;color:var(--accent);letter-spacing:1px;font-weight:700;margin-bottom:8px}
+.analiz-etki-item{font-size:12px;color:#c8c5c0;padding:4px 0;border-bottom:1px solid var(--border);line-height:1.6}
+.analiz-etki-item:last-child{border-bottom:none}
+.analiz-risk-fırsat{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.analiz-risk{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);border-radius:8px;padding:10px}
+.analiz-firsatlar{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:8px;padding:10px}
+.analiz-section-title{font-size:9px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
+.analiz-uyari{font-size:9px;color:var(--muted);opacity:.7;line-height:1.5}
+
+/* SENTIMENT GAUGE */
+.sentiment-widget{padding:16px}
+.gauge-wrap{position:relative;width:180px;height:100px;margin:0 auto 12px}
+.gauge-label{text-align:center;font-size:13px;font-weight:600;margin-bottom:4px}
+.gauge-skor{text-align:center;font-size:28px;font-weight:700;color:var(--accent);margin-bottom:4px}
+.gauge-etiket{text-align:center;font-size:11px;color:var(--muted);margin-bottom:12px;min-height:16px}
+.sentiment-bars{display:flex;gap:6px;margin-bottom:10px}
+.sbar{flex:1;border-radius:4px;padding:6px 4px;text-align:center}
+.sbar-label{font-size:9px;color:var(--muted);margin-bottom:2px;text-transform:uppercase;letter-spacing:.5px}
+.sbar-val{font-size:14px;font-weight:700}
+.sentiment-uyari{font-size:9px;color:var(--muted);line-height:1.5;border-top:1px solid var(--border);padding-top:8px;margin-top:4px;opacity:.7}
+
+/* ADSENSE PLACEHOLDER - Layout Shift Önleme */
+.ad-placeholder{background:#0d0d16;border:1px solid var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.ad-placeholder::before{content:'Reklam';font-size:10px;color:var(--border);letter-spacing:2px;text-transform:uppercase;position:absolute}
+.ad-728x90{width:100%;height:90px;max-width:728px}
+.ad-300x250{width:300px;height:250px}
+.ad-300x600{width:300px;height:600px}
+.ad-160x600{width:160px;height:600px}
+.ad-slot{position:relative;z-index:1} /* Reklamlar nav altında */
+
+/* LOAD MORE */
+.load-more{width:100%;background:transparent;border:1px solid var(--border);border-radius:8px;padding:10px;color:var(--muted);font-size:12px;cursor:pointer;font-family:inherit;transition:all .2s;margin-top:12px}
+.load-more:hover{border-color:var(--accent);color:var(--accent)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--border);padding:24px 32px;margin-top:0}
+.footer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.footer-logo{font-family:'Playfair Display',serif;font-size:20px;font-weight:900}
+.footer-logo span{color:var(--accent)}
+.footer-links{display:flex;gap:20px;font-size:11px}
+.footer-links a{color:var(--muted);text-decoration:none;transition:color .2s}
+.footer-links a:hover{color:var(--accent)}
+.footer-bottom{font-size:10px;color:var(--muted);border-top:1px solid var(--border);padding-top:12px;display:flex;justify-content:space-between}
+
+/* CANLI HABER AKIŞI PANELİ */
+.live-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:500;backdrop-filter:blur(4px)}
+.live-overlay.open{display:block}
+.live-panel{position:fixed;top:0;right:-420px;width:400px;height:100vh;background:var(--surface);border-left:1px solid var(--border);z-index:501;display:flex;flex-direction:column;transition:right .3s ease}
+.live-panel.open{right:0}
+.live-panel-header{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;background:var(--bg);flex-shrink:0}
+.live-panel-title{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:600}
+.live-dot-big{width:10px;height:10px;border-radius:50%;background:var(--red);animation:pulse 1.5s infinite;flex-shrink:0}
+.live-close{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:6px 12px;cursor:pointer;font-size:12px;font-family:inherit;transition:all .2s}
+.live-close:hover{border-color:var(--red);color:var(--red)}
+.live-feed{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.live-feed::-webkit-scrollbar{width:4px}
+.live-feed::-webkit-scrollbar-track{background:transparent}
+.live-feed::-webkit-scrollbar-thumb{background:var(--border);border-radius:2px}
+
+.feed-item{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:12px 14px;cursor:pointer;transition:all .2s;position:relative;animation:slideIn .3s ease}
+.feed-item:hover{border-color:var(--accent);transform:translateX(-3px)}
+.feed-item.yeni{border-color:var(--accent);background:rgba(232,200,74,.05)}
+@keyframes slideIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+
+.feed-time{font-size:10px;color:var(--accent);font-weight:600;margin-bottom:5px;display:flex;align-items:center;gap:6px}
+.feed-time-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.feed-cat{font-size:9px;color:var(--muted);background:var(--border);border-radius:3px;padding:2px 6px;letter-spacing:1px;text-transform:uppercase}
+.feed-title{font-size:13px;font-weight:500;line-height:1.5;color:var(--text);margin-bottom:5px}
+.feed-source{font-size:10px;color:var(--muted)}
+.feed-new-badge{position:absolute;top:10px;right:10px;background:var(--red);color:#fff;font-size:8px;font-weight:700;padding:2px 6px;border-radius:10px;letter-spacing:1px}
+
+.live-footer{padding:12px 16px;border-top:1px solid var(--border);text-align:center;flex-shrink:0}
+.live-footer span{font-size:11px;color:var(--muted)}
+.live-count{color:var(--accent);font-weight:600}
+
+@media(max-width:900px){
+  .main-grid{grid-template-columns:1fr}
+  .left-sidebar{display:none}
+  nav{display:none}
+  .news-grid{grid-template-columns:1fr}
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2898813019099466" crossorigin="anonymous"></script>
+<!-- Google Reader Revenue Manager -->
+<script async type="application/javascript"
+        src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
+<script>
+  (self.SWG_BASIC = self.SWG_BASIC || []).push( basicSubscriptions => {
+    basicSubscriptions.init({
+      type: "NewsArticle",
+      isPartOfType: ["Product"],
+      isPartOfProductId: "CAow2pzLDA:openaccess",
+      clientOptions: { theme: "light", lang: "tr" },
+    });
+  });
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DL06Q5PB7C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DL06Q5PB7C');
+</script>
+</head>
+<body>
+
+<!-- TICKER — TradingView -->
+<div class="ticker-wrap" style="height:auto;overflow:visible;background:#0d0d16;padding:0">
+  <!-- Sabit piyasa tablosu - TradingView Mini Symbols -->
+  <div style="display:flex;overflow-x:auto;gap:0;scrollbar-width:none" id="marketBar">
+    <div class="market-cell" id="mc-usdtry">
+      <div class="mc-name">USD/TRY</div>
+      <div class="mc-price">—</div>
+      <div class="mc-change">yükleniyor</div>
+    </div>
+    <div class="market-cell" id="mc-eurtry">
+      <div class="mc-name">EUR/TRY</div>
+      <div class="mc-price">—</div>
+      <div class="mc-change">yükleniyor</div>
+    </div>
+    <div class="market-cell" id="mc-gbptry">
+      <div class="mc-name">GBP/TRY</div>
+      <div class="mc-price">—</div>
+      <div class="mc-change">yükleniyor</div>
+    </div>
+    <div class="market-cell" id="mc-gold">
+      <div class="mc-name">ALTIN</div>
+      <div class="mc-price">—</div>
+      <div class="mc-change">yükleniyor</div>
+    </div>
+    <div class="market-cell" id="mc-btc">
+      <div class="mc-name">BTC</div>
+      <div class="mc-price">—</div>
+      <div class="mc-change">yükleniyor</div>
+    </div>
+    <div class="market-cell" id="mc-eth">
+      <div class="mc-name">ETH</div>
+      <div class="mc-price">—</div>
+      <div class="mc-change">yükleniyor</div>
+    </div>
+    <div class="market-cell" id="mc-bist">
+      <div class="mc-name">BIST100</div>
+      <div class="mc-price">—</div>
+      <div class="mc-change">yükleniyor</div>
+    </div>
+    <div class="market-cell" id="mc-silver">
+      <div class="mc-name">GÜMÜŞ</div>
+      <div class="mc-price">—</div>
+      <div class="mc-change">yükleniyor</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div style="display:flex;align-items:center">
+    <div class="logo" onclick="geriDon()" style="cursor:pointer">Anlık<span>Haber</span></div>
+    <div class="logo-sub">anlikhaber.com</div>
+  </div>
+  <nav>
+    <a href="#" class="active" onclick="filterCat('hepsi',this)">🏠 Ana Sayfa</a>
+    <a href="#" onclick="filterCat('borsa',this)">📈 Borsa</a>
+    <a href="#" onclick="filterCat('doviz',this)">💱 Döviz</a>
+    <a href="#" onclick="filterCat('emtia',this)">🥇 Emtia</a>
+    <a href="#" onclick="filterCat('kripto',this)">₿ Kripto</a>
+    <a href="#" onclick="filterCat('ekonomi',this)">🏛 Ekonomi</a>
+    <a href="#" onclick="ozelSayfa('kurlar',this)" style="color:var(--accent)">📊 Kurlar</a>
+    <a href="#" onclick="ozelSayfa('sentiment',this)" style="color:var(--accent)">🧠 Endeks</a>
+    <a href="#" onclick="ozelSayfa('analizler',this)" style="color:var(--accent)">🔬 Analiz</a>
+    <a href="/plus-quiz" style="color:var(--accent)">🎯 Quiz</a>
+  </nav>
+  <div style="display:flex;align-items:center;gap:10px">
+    <span style="font-size:11px;color:var(--muted)" id="clockEl">—</span>
+    <div id="sentimentBadge" onclick="document.querySelector('.right-sidebar').scrollIntoView({behavior:'smooth'})" 
+         style="cursor:pointer;background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:11px;display:flex;align-items:center;gap:6px;transition:border-color .2s"
+         title="Piyasa Duygu Endeksi">
+      <span>🧠</span>
+      <span id="sentimentBadgeText" style="color:var(--muted)">Analiz ediliyor...</span>
+    </div>
+    <button class="theme-toggle" id="themeBtn" onclick="toggleTheme()">🌙 Gece</button>
+    <span class="live-badge" onclick="openLiveFeed()" style="cursor:pointer" title="Anlık haber akışını aç">● Canlı</span>
+  </div>
+</header>
+
+<!-- RİTMİ BELİRLE BANNER -->
+<div class="ad-leaderboard">
+  <div onclick="window.location.href='/plus-quiz'" style="width:100%;height:80px;background:#0a0a0f;border:1px solid #2a2500;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;overflow:hidden">
+    <svg style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none" preserveAspectRatio="none">
+      <style>.gw2{stroke-dasharray:8 4;animation:goldwave2 3s linear infinite}@keyframes goldwave2{to{stroke-dashoffset:-200}}</style>
+      <path d="M0,40 Q200,10 400,40 Q600,70 800,40" fill="none" stroke="#e8c84a" stroke-width="1.5" opacity=".35" class="gw2"/>
+      <path d="M0,20 Q300,60 600,20 Q750,0 900,20" fill="none" stroke="#e8c84a" stroke-width=".7" opacity=".15" class="gw2" style="animation-delay:.7s"/>
+    </svg>
+    <span style="position:absolute;top:8px;left:14px;background:#e8c84a;color:#0a0a0f;font-size:9px;font-weight:700;padding:2px 7px;border-radius:3px;letter-spacing:1px">BETA</span>
+    <div style="position:relative;z-index:2;text-align:center">
+      <div style="font-size:28px;font-weight:900;color:#e8c84a;letter-spacing:4px;font-family:Arial Black,Impact,sans-serif;line-height:1">RİTMİ BELİRLE</div>
+      <div style="font-size:10px;color:#6b6b80;letter-spacing:2px;margin-top:3px">PLUS QUIZ · Piyasa Bilgin Ne Kadar Güçlü?</div>
+    </div>
+    <span style="position:absolute;bottom:8px;right:14px;font-size:10px;color:#e8c84a;opacity:.7">Başla →</span>
+  </div>
+</div>
+
+<!-- BREAKING -->
+<div class="breaking-bar" id="breakingBar" onclick="breakingTikla()" style="cursor:pointer" title="Habere git">
+  <div class="breaking-tag">Son Dakika</div>
+  <div id="breakingText" style="flex:1;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">Haberler yükleniyor...</div>
+  <div style="font-size:11px;opacity:.7;margin-left:10px;flex-shrink:0">→</div>
+</div>
+
+<!-- MAIN -->
+<div class="container">
+  <div class="main-grid">
+
+    <!-- SOL SIDEBAR -->
+    <div class="left-sidebar">
+      <div class="left-ad" style="min-height:260px" onclick="adClick('Sol 160x600 üst')">
+        <div class="ad-label">Reklam</div>
+        <strong style="color:var(--accent);font-size:12px">160×600</strong>
+        <p style="font-size:10px;color:var(--muted)">Wide Skyscraper<br>reklam@anlikhaber.com</p>
+      </div>
+      <div class="left-ad" style="min-height:260px" onclick="adClick('Sol 160x600 alt')">
+        <div class="ad-label">Reklam</div>
+        <strong style="color:var(--accent);font-size:12px">160×600</strong>
+        <p style="font-size:10px;color:var(--muted)">Wide Skyscraper<br>reklam@anlikhaber.com</p>
+      </div>
+      <div class="left-ad" style="min-height:140px;border-color:#f7931a44" onclick="adClick('Kripto Sponsor')">
+        <div class="ad-label">Sponsorlu</div>
+        <strong style="color:#f7931a;font-size:12px">Kripto Sponsor</strong>
+        <p style="font-size:10px;color:var(--muted)">reklam@anlikhaber.com</p>
+      </div>
+    </div>
+
+    <!-- ORTA -->
+    <div>
+      <div class="cat-row" id="catRow">
+        <div class="cat-tab active" onclick="filterCat('hepsi',this)">Tümü</div>
+        <div class="cat-tab" onclick="filterCat('piyasa',this)">📈 Piyasalar</div>
+        <div class="cat-tab" onclick="filterCat('kripto',this)">₿ Kripto</div>
+        <div class="cat-tab" onclick="filterCat('ekonomi',this)">🏛 Ekonomi</div>
+        <div class="cat-tab" onclick="filterCat('borsa',this)">📊 Borsa</div>
+        <div class="cat-tab" onclick="filterCat('doviz',this)">💱 Döviz</div>
+        <div class="cat-tab" onclick="filterCat('emtia',this)">🥇 Emtia</div>
+        <div class="cat-tab" onclick="filterCat('finans',this)">💰 Finans</div>
+      </div>
+
+      <div class="hero-card" id="heroCard">
+        <div class="hero-visual" id="heroVisual">
+          <div class="hero-cat-badge" id="heroCat">HABER</div>
+          <div class="hero-time" id="heroTime">—</div>
+          <div class="hero-title" id="heroTitle">Haberler yükleniyor...</div>
+        </div>
+        <div class="hero-body">
+          <div class="hero-meta"><span class="hero-source" id="heroSource">—</span> · <span id="heroMeta2">anlikhaber.com</span></div>
+          <div class="hero-desc" id="heroDesc">Lütfen bekleyin...</div>
+          <a class="read-link" id="heroLink" href="#" onclick="if(window.currentHeroSlug){event.preventDefault();haberAc(window.currentHeroSlug)}">Haberin tamamını oku →</a>
+          <div class="ai-note-small" id="heroAiNote"></div>
+        </div>
+      </div>
+
+      <div class="ad-infeed" onclick="adClick('In-Feed 728x90')">
+        <strong>In-Feed Reklam — 728×90</strong>
+        <span>reklam@anlikhaber.com</span>
+      </div>
+
+      <div class="news-grid" id="newsGrid"></div>
+
+      <div class="ad-infeed" onclick="adClick('Native Ad')">
+        <strong>Native Reklam Alanı</strong>
+        <span>reklam@anlikhaber.com</span>
+      </div>
+
+      <div class="news-list" id="newsList"></div>
+
+      <div class="ad-infeed" onclick="adClick('300x250 liste altı')">
+        <strong>300×250 — Medium Rectangle</strong>
+        <span>reklam@anlikhaber.com</span>
+      </div>
+
+      <div class="news-list" id="newsList2"></div>
+
+      <div class="ad-infeed" onclick="adClick('Sayfa sonu leaderboard')">
+        <strong>728×90 — Sayfa Sonu Leaderboard</strong>
+        <span>reklam@anlikhaber.com</span>
+      </div>
+
+      <button class="load-more" onclick="loadMore()">Daha Fazla Haber Yükle ↓</button>
+    </div>
+
+    <!-- SAĞ SIDEBAR -->
+    <div class="right-sidebar">
+
+      <!-- AD 300x250 üst -->
+      <div class="ad-side" onclick="adClick('Sağ sidebar 300x250 üst')">
+        <div class="ad-label">Reklam </div>
+        <strong>300×250</strong>
+        <p>Medium Rectangle<br>reklam@anlikhaber.com</p>
+      </div>
+
+      <!-- TradingView Market Quotes -->
+      <div class="widget">
+        <div class="widget-header">
+          <div class="widget-title">Canlı Piyasalar</div>
+          <span style="font-size:9px;color:var(--muted)">TradingView</span>
+        </div>
+        <div class="tv-widget-wrap">
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+            {
+              "width":"100%",
+              "height":520,
+              "symbolsGroups":[
+                {"name":"🇹🇷 Türkiye","originalName":"Türkiye","symbols":[
+                  {"name":"BIST:XU100","displayName":"BIST 100"},
+                  {"name":"FX:USDTRY","displayName":"USD/TRY"},
+                  {"name":"FX:EURTRY","displayName":"EUR/TRY"},
+                  {"name":"BINANCE:BTCUSDT","displayName":"Bitcoin"},
+                  {"name":"BINANCE:ETHUSDT","displayName":"Ethereum"},
+                  {"name":"TVC:GOLD","displayName":"Altın"}
+                ]},
+                {"name":"₿ Kripto","originalName":"Kripto","symbols":[
+                  {"name":"BINANCE:BTCUSDT","displayName":"Bitcoin"},
+                  {"name":"BINANCE:ETHUSDT","displayName":"Ethereum"},
+                  {"name":"BINANCE:BNBUSDT","displayName":"BNB"},
+                  {"name":"BINANCE:SOLUSDT","displayName":"Solana"},
+                  {"name":"BINANCE:XRPUSDT","displayName":"XRP"}
+                ]},
+                {"name":"🌍 Dünya","originalName":"Dünya","symbols":[
+                  {"name":"FOREXCOM:SPXUSD","displayName":"S&P 500"},
+                  {"name":"NASDAQ:NDX","displayName":"NASDAQ 100"},
+                  {"name":"FOREXCOM:DJI","displayName":"Dow Jones"},
+                  {"name":"XETR:DAX","displayName":"DAX"}
+                ]},
+                {"name":"🥇 Emtia","originalName":"Emtia","symbols":[
+                  {"name":"TVC:GOLD","displayName":"Altın"},
+                  {"name":"COMEX:SI1!","displayName":"Gümüş"},
+                  {"name":"NYMEX:CL1!","displayName":"Petrol WTI"},
+                  {"name":"NYMEX:BZ1!","displayName":"Brent"}
+                ]}
+              ],
+              "showSymbolLogo":true,
+              "isTransparent":true,
+              "colorTheme":"dark",
+              "locale":"tr"
+            }
+            </script>
+          </div>
+        </div>
+      </div>
+
+      <!-- AD 300x250 orta -->
+      <div class="ad-side" onclick="adClick('Sağ sidebar 300x250 orta')">
+        <div class="ad-label">Reklam </div>
+        <strong>300×250</strong>
+        <p>Medium Rectangle<br>reklam@anlikhaber.com</p>
+      </div>
+
+      <!-- TRENDING -->
+      <div class="widget">
+        <div class="widget-header"><div class="widget-title">Trend Konular</div></div>
+        <div id="trendList">
+          <div class="trend-item"><div class="trend-rank">1</div><div><div class="trend-name">Faiz Kararı</div><div class="trend-count">2.4K okuma</div></div><div class="trend-right">▲</div></div>
+          <div class="trend-item"><div class="trend-rank">2</div><div><div class="trend-name">Bitcoin</div><div class="trend-count">1.8K okuma</div></div><div class="trend-right">▲</div></div>
+          <div class="trend-item"><div class="trend-rank">3</div><div><div class="trend-name">BIST 100</div><div class="trend-count">1.2K okuma</div></div><div class="trend-right">▲</div></div>
+          <div class="trend-item"><div class="trend-rank">4</div><div><div class="trend-name">Dolar/TL</div><div class="trend-count">980 okuma</div></div><div class="trend-right">→</div></div>
+          <div class="trend-item"><div class="trend-rank">5</div><div><div class="trend-name">Altın</div><div class="trend-count">754 okuma</div></div><div class="trend-right">▲</div></div>
+        </div>
+      </div>
+
+      <!-- EMAIL -->
+      <div class="widget">
+        <div class="widget-header"><div class="widget-title">Günlük Bülten</div></div>
+        <div class="email-widget">
+          <p>Her sabah 07:00'de piyasa özeti e-postanıza gelsin.</p>
+          <input type="email" id="emailInput" placeholder="e-posta@adresiniz.com">
+          <div style="margin-bottom:10px;padding:8px;background:rgba(232,200,74,.05);border:1px solid rgba(232,200,74,.2);border-radius:6px">
+            <label style="display:flex;align-items:flex-start;gap:8px;cursor:pointer;width:100%">
+              <input type="checkbox" id="kvkkOnay" style="margin-top:2px;flex-shrink:0;width:14px;height:14px;accent-color:var(--accent)">
+              <span style="font-size:10px;color:var(--muted);line-height:1.7;display:block;text-align:left">
+                E-posta adresimin bülten gönderimi amacıyla işlenmesini kabul ediyorum.
+                <a href="#" onclick="event.preventDefault();sayfaAc('kvkk')" style="color:var(--accent)">KVKK Aydınlatma Metni</a>'ni
+                okudum. Dilediğim zaman abonelikten çıkabileceğimi biliyorum.
+              </span>
+            </label>
+          </div>
+          <button onclick="subscribe()">Ücretsiz Abone Ol</button>
+        </div>
+      </div>
+
+      <!-- SON TWEET -->
+      <div class="widget">
+        <div class="widget-header">
+          <div class="widget-title">X'te Son Paylaşım</div>
+          <a href="https://x.com/anlikhaber22" class="widget-link" target="_blank">@anlikhaber →</a>
+        </div>
+        <div style="padding:14px">
+          <div id="lastTweetEl" style="font-size:12px;color:var(--muted);line-height:1.7;background:var(--bg);border-radius:6px;padding:10px 12px;border-left:2px solid var(--accent)">Yükleniyor...</div>
+          <div style="margin-top:10px;display:flex;align-items:center;gap:6px">
+            <div style="width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite"></div>
+            <span style="font-size:11px;color:var(--muted)">Otomatik paylaşım aktif</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DERİN ANALİZ -->
+      <div class="widget" id="derinAnalizWidget">
+        <div class="widget-header">
+          <div class="widget-title">🧠 Claude Derin Analiz</div>
+          <span style="font-size:9px;color:var(--accent);font-weight:600">SONNET</span>
+        </div>
+        <div id="derinAnalizIcerik" style="padding:12px">
+          <div style="font-size:12px;color:var(--muted);text-align:center;padding:20px">Analiz yükleniyor...</div>
+        </div>
+      </div>
+
+      <!-- SENTIMENT GAUGE -->
+      <div class="widget">
+        <div class="widget-header">
+          <div class="widget-title">🧠 Piyasa Duygu Endeksi</div>
+          <span style="font-size:9px;color:var(--muted)" id="sentimentTime">—</span>
+        </div>
+        <div class="sentiment-widget">
+          <div class="gauge-wrap" style="width:220px;height:130px;margin:0 auto 16px">
+            <canvas id="sentimentGauge" width="220" height="130"></canvas>
+          </div>
+          <div class="gauge-skor" id="sentimentSkor">—</div>
+          <div class="gauge-etiket" id="sentimentEtiket">Yükleniyor...</div>
+          <div class="sentiment-bars">
+            <div class="sbar" style="background:rgba(34,197,94,.1)">
+              <div class="sbar-label">Pozitif</div>
+              <div class="sbar-val" id="sPoz" style="color:var(--green)">—</div>
+            </div>
+            <div class="sbar" style="background:rgba(107,107,128,.1)">
+              <div class="sbar-label">Nötr</div>
+              <div class="sbar-val" id="sNotr" style="color:var(--muted)">—</div>
+            </div>
+            <div class="sbar" style="background:rgba(239,68,68,.1)">
+              <div class="sbar-label">Negatif</div>
+              <div class="sbar-val" id="sNeg" style="color:var(--red)">—</div>
+            </div>
+          </div>
+          <div class="sentiment-uyari">⚠️ Bu analiz yapay zeka tarafından haber metinleri üzerinde yapılan dil analizidir. Yatırım tavsiyesi içermez.</div>
+        </div>
+      </div>
+
+      <!-- AD 300x600 -->
+      <div class="ad-side" style="min-height:400px" onclick="adClick('Sağ sidebar 300x600')">
+        <div class="ad-label">Reklam </div>
+        <strong>300×600</strong>
+        <p>Half Page Banner<br>En yüksek CPM<br>$8–25</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- BOTTOM ADS -->
+<div class="bottom-ads">
+  <div class="ad-box" style="min-height:90px;padding:12px" onclick="adClick('Footer sol')"><div class="ad-label">Reklam</div><strong>300×100</strong><p style="font-size:10px;color:var(--muted)">Footer Sol</p></div>
+  <div class="ad-box" style="min-height:90px;padding:12px;border-color:#e8c84a44" onclick="adClick('Footer sponsor')"><div class="ad-label">Sponsor</div><strong style="color:var(--accent)">Finans Şirketi</strong><p style="font-size:10px;color:var(--muted)">reklam@anlikhaber.com</p></div>
+  <div class="ad-box" style="min-height:90px;padding:12px" onclick="adClick('Footer sağ')"><div class="ad-label">Reklam</div><strong>300×100</strong><p style="font-size:10px;color:var(--muted)">Footer Sağ</p></div>
+</div>
+
+<!-- CANLI HABER AKIŞI PANELİ -->
+<div class="live-overlay" id="liveOverlay" onclick="closeLiveFeed()"></div>
+<div class="live-panel" id="livePanel">
+  <div class="live-panel-header">
+    <div class="live-panel-title">
+      <div class="live-dot-big"></div>
+      Anlık Haber Akışı
+    </div>
+    <button class="live-close" onclick="closeLiveFeed()">✕ Kapat</button>
+  </div>
+  <div class="live-feed" id="liveFeed">
+    <div style="text-align:center;padding:40px;color:var(--muted);font-size:13px">Yükleniyor...</div>
+  </div>
+  <div class="live-footer">
+    <span>Son güncelleme: <span id="liveLastUpdate">—</span> · Toplam: <span class="live-count" id="liveTotalCount">0</span> haber</span>
+  </div>
+</div>
+
+<!-- HABER DETAY -->
+<div class="detay-page" id="detayPage">
+  <div style="max-width:860px;margin:0 auto">
+    <button class="back-btn" onclick="geriDon()">← Ana Sayfaya Dön</button>
+    <div class="detay-breadcrumb"><a onclick="geriDon()">Ana Sayfa</a> › <span id="detayBreadCat">—</span></div>
+    <div class="detay-cat" id="detayCat">—</div>
+    <h1 class="detay-title" id="detayTitle">Yükleniyor...</h1>
+    <div class="detay-meta">
+      <span class="detay-source" id="detaySource">—</span>
+      <span id="detayTime">—</span>
+    </div>
+    <div id="detayResimWrap" style="margin-bottom:20px;border-radius:10px;overflow:hidden"></div>
+    <div class="detay-ai-note"><span>🤖</span><span id="detayAiNotuText">—</span></div>
+    <div id="detaySentimentWrap" style="margin-bottom:16px"></div>
+    <div class="detay-ad" onclick="adClick('Haber içi 728x90')"><strong>728×90 Haber İçi Reklam</strong><span>reklam@anlikhaber.com</span></div>
+    <div class="detay-content" id="detayContent"><p>Yükleniyor...</p></div>
+    <div class="detay-kaynak">📌 <strong>Kaynak:</strong> Bu haber <span id="detayKaynakAdi">—</span> kaynağından derlenerek hazırlanmıştır. <a href="#" id="detayKaynakLink" target="_blank">Orijinal haberi oku →</a></div>
+    <div class="detay-share">
+      <button class="share-btn" onclick="xPaylas()">🐦 X'te Paylaş</button>
+      <button class="share-btn" onclick="navigator.clipboard.writeText(window.location.href);alert('Link kopyalandı!')">🔗 Link Kopyala</button>
+      <button class="share-btn" onclick="window.open('https://wa.me/?text='+encodeURIComponent(document.getElementById('detayTitle').textContent+' - anlikhaber.com'))">💬 WhatsApp</button>
+    </div>
+    <div class="detay-ad" onclick="adClick('Haber altı 300x250')"><strong>300×250 Haber Altı Reklam</strong><span>reklam@anlikhaber.com</span></div>
+    <div>
+      <div style="font-size:13px;font-weight:600;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid var(--border)">İlgili Haberler</div>
+      <div class="ilgili-grid" id="ilgiliGrid"><div style="color:var(--muted);font-size:12px">Yükleniyor...</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-logo">Anlık<span>Haber</span> <span style="font-size:10px;color:var(--muted);font-family:'DM Sans',sans-serif;font-weight:300">anlikhaber.com</span></div>
+    <div class="footer-links">
+      <a href="#" onclick="sayfaAc('hakkimizda')">Hakkımızda</a>
+      <a href="#" onclick="sayfaAc('reklam')">Reklam Ver</a>
+      <a href="#" onclick="sayfaAc('iletisim')">İletişim</a>
+      <a href="#" onclick="sayfaAc('gizlilik')">Gizlilik</a>
+      <a href="#" onclick="sayfaAc('kvkk')">KVKK</a>
+      <a href="#" onclick="sayfaAc('sartlar')">Kullanım Şartları</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 AnlıkHaber · anlikhaber.com · Tüm hakları saklıdır.</span>
+    <span>Bu sitedeki bilgiler yatırım tavsiyesi niteliği taşımaz.</span>
+  </div>
+</footer>
+
+<script>
+// Mobil cihaz tespiti — otomatik yönlendirme
+if(/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && !location.search.includes('desktop')) {
+  window.location.replace('/mobile.html');
+}
+
+const API_URL = 'https://anlikhaber-backend-production.up.railway.app';
+
+const catIcons = {finans:'💰',piyasa:'📈',kripto:'₿',ekonomi:'🏛',borsa:'📊',doviz:'💱',emtia:'🥇',altin:'🥇',analiz:'🔍'};
+
+// Kategori bazlı 80 farklı görsel (her kategori 10 adet)
+// Sadece finansal objeler — insan/yüz fotoğrafı yok
+const catImageSets = {
+  finans: [
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75', // grafik ekran
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75', // borsa ekranı
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75', // para
+    'https://images.unsplash.com/photo-1559526324-593bc073d938?w=400&q=75', // grafik
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75', // dolar
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75', // grafik
+    'https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=400&q=75', // bitcoin
+    'https://images.unsplash.com/photo-1642790551116-18a150d073a0?w=400&q=75', // kripto
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75', // veri
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75', // laptop grafik
+  ],
+  borsa: [
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400&q=75',
+    'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400&q=75',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1559526324-593bc073d938?w=400&q=75',
+  ],
+  ekonomi: [
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+    'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=400&q=75',
+  ],
+  kripto: [
+    'https://images.unsplash.com/photo-1640161704729-cbe966a08476?w=400&q=75',
+    'https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=400&q=75',
+    'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=400&q=75',
+    'https://images.unsplash.com/photo-1605792657660-596af9009e82?w=400&q=75',
+    'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&q=75',
+    'https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=400&q=75',
+    'https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+  ],
+  doviz: [
+    'https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1559526324-593bc073d938?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+  ],
+  emtia: [
+    'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=400&q=75',
+    'https://images.unsplash.com/photo-1624365168968-f283d506adc3?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+  ],
+  altin: [
+    'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=400&q=75',
+    'https://images.unsplash.com/photo-1624365168968-f283d506adc3?w=400&q=75',
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400&q=75',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+  ],
+  analiz: [
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400&q=75',
+    'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400&q=75',
+  ],
+  piyasa: [
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+    'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+  ],
+};
+
+const defaultImgSet = catImageSets.finans;
+const defaultImg = defaultImgSet[0];
+
+// Slug'a göre tutarlı ama çeşitli görsel seç
+// Sentiment bar render fonksiyonu
+function renderSentimentBar(s, mini) {
+  if(!s) return '';
+  mini = mini || false;
+  var skor = s.score || 50;
+  var renk;
+  if(skor <= 20) renk = '#ef4444';
+  else if(skor <= 35) renk = '#f97316';
+  else if(skor <= 50) renk = '#f59e0b';
+  else if(skor <= 65) renk = '#6b7280';
+  else if(skor <= 80) renk = '#22c55e';
+  else renk = '#e8c84a';
+  
+  var h = mini ? '3px' : '4px';
+  var fs = mini ? '8px' : '9px';
+  var uyari = s.uyari || 'Haber duygu skoru';
+  
+  return '<div class="sentiment-bar-wrap" title="' + uyari + '">' +
+    '<div class="sentiment-bar-bg" style="height:' + h + '">' +
+    '<div class="sentiment-bar-fill" style="width:' + skor + '%;background:' + renk + '"></div>' +
+    '</div>' +
+    '<span class="sentiment-score-label" style="color:' + renk + ';font-size:' + fs + '">' + (s.label||'') + ' ' + skor + '</span>' +
+    '<span class="sentiment-info" title="' + uyari + '">ℹ</span>' +
+    '</div>';
+}
+
+function getCatImage(cat, slug) {
+  const imgs = catImageSets[cat] || catImageSets.finans;
+  if(slug) {
+    // Slug'dan sayısal hash üret — aynı haber hep aynı görseli göstersin
+    let hash = 0;
+    for(let i = 0; i < slug.length; i++) hash = ((hash << 5) - hash) + slug.charCodeAt(i);
+    return imgs[Math.abs(hash) % imgs.length];
+  }
+  return imgs[Math.floor(Math.random() * imgs.length)];
+}
+let allNews = [];
+let currentHaber = null;
+window.currentHeroSlug = null;
+let breakingIndex = 0;
+let breakingHaberler = [];
+
+function breakingTikla() {
+  if(breakingHaberler.length === 0) return;
+  const h = breakingHaberler[breakingIndex > 0 ? breakingIndex - 1 : 0];
+  if(h && h.slug) haberAc(h.slug);
+  else if(h && h.bizimUrl) window.open(h.bizimUrl, '_blank');
+}
+
+function timeAgo(d) {
+  if(!d) return '—';
+  const date = new Date(d);
+  const m = (Date.now() - date) / 60000;
+  if(m < 1) return 'şimdi';
+  if(m < 60) return Math.floor(m) + ' dk önce';
+  if(m < 1440) return Math.floor(m/60) + ' sa önce';
+  if(m < 10080) return Math.floor(m/1440) + ' gün önce';
+  // 1 haftadan eski — tam tarih göster
+  return date.toLocaleDateString('tr-TR', {day:'numeric', month:'short', year:'numeric'});
+}
+
+function getField(n, ...fields) {
+  for(const f of fields) { if(n[f]) return n[f]; }
+  return '';
+}
+
+function renderAll(news) {
+  if(!news || !news.length) return;
+  const h = news[0];
+  const hCat = getField(h,'cat','category') || 'haber';
+  const hSource = getField(h,'kaynak') || (h.source && h.source.name) || 'AnlıkHaber';
+  const hTime = getField(h,'tarih','publishedAt','pubDate');
+  const hUrl = getField(h,'bizimUrl','orijinalUrl','link','url') || '#';
+
+  document.getElementById('heroCat').textContent = hCat.toUpperCase();
+  document.getElementById('heroTime').textContent = timeAgo(hTime);
+  document.getElementById('heroTitle').textContent = h.title || '';
+  document.getElementById('heroSource').textContent = hSource;
+  document.getElementById('heroDesc').textContent = (h.description || '').substring(0,200);
+  document.getElementById('heroLink').href = hUrl;
+  document.getElementById('heroAiNote').textContent = h.aiNotu || '';
+  window.currentHeroSlug = h.slug || null;
+
+  const heroImg = h.resim || getCatImage(getField(h,'cat','category') || 'finans');
+  const hv = document.getElementById('heroVisual');
+  hv.style.backgroundImage = 'linear-gradient(to top, rgba(10,10,15,.92), rgba(10,10,15,.2)), url('+heroImg+')';
+  hv.style.backgroundSize = 'cover';
+  hv.style.backgroundPosition = 'center';
+
+  // NEWS GRID
+  document.getElementById('newsGrid').innerHTML = news.slice(1,5).map(n => {
+    const nCat = getField(n,'cat','category') || 'haber';
+    const nUrl = getField(n,'bizimUrl','orijinalUrl','link','url') || '#';
+    const nTime = getField(n,'tarih','publishedAt');
+    const nSource = getField(n,'kaynak') || (n.source && n.source.name) || '';
+    const onclick = n.slug ? `haberAc('${n.slug}')` : `window.open('${nUrl}','_blank')`;
+    return `<div class="news-card" onclick="${onclick}">
+      <img src="${n.resim || getCatImage(nCat, n.slug||'')}" class="news-thumb" width="400" height="225" style="background:#13131a" onerror="this.src=getCatImage('${nCat}', '${n.slug||""}')" loading="lazy">
+      <div class="news-body">
+        <div class="nc-top"><span class="nc-cat">${catIcons[nCat]||'📰'} ${nCat.toUpperCase()}</span><span class="nc-time">${timeAgo(nTime)}</span></div>
+        <div class="nc-title">${n.title||''}</div>
+        <div class="nc-source">${nSource}</div>
+        <div class="nc-ai">${n.aiNotu ? '🤖 AI Özet · Kaynak: '+(n.kaynakDomain||nSource) : ''}</div>
+        ${n.sentiment ? renderSentimentBar(n.sentiment) : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  // NEWS LIST 1
+  document.getElementById('newsList').innerHTML = news.slice(5,10).map((n,i) => {
+    const nCat = getField(n,'cat','category') || '';
+    const nUrl = getField(n,'bizimUrl','orijinalUrl','link','url') || '#';
+    const nTime = getField(n,'tarih','publishedAt');
+    const nSource = getField(n,'kaynak') || (n.source && n.source.name) || '';
+    const onclick = n.slug ? `haberAc('${n.slug}')` : `window.open('${nUrl}','_blank')`;
+    return `<div class="nl-item" onclick="${onclick}">
+      <div class="nl-num">${i+6}</div>
+      <div><div class="nl-cat">${catIcons[nCat]||'📰'} ${nCat.toUpperCase()}</div>
+      <div class="nl-title">${n.title||''}</div>
+      <div class="nl-meta">${nSource} · ${timeAgo(nTime)} ${n.aiNotu?'· 🤖 AI':''}</div>
+      ${n.sentiment ? renderSentimentBar(n.sentiment, true) : ''}
+      </div>
+    </div>`;
+  }).join('');
+
+  // NEWS LIST 2
+  document.getElementById('newsList2').innerHTML = news.slice(10).map((n,i) => {
+    const nCat = getField(n,'cat','category') || '';
+    const nUrl = getField(n,'bizimUrl','orijinalUrl','link','url') || '#';
+    const nTime = getField(n,'tarih','publishedAt');
+    const nSource = getField(n,'kaynak') || (n.source && n.source.name) || '';
+    const onclick = n.slug ? `haberAc('${n.slug}')` : `window.open('${nUrl}','_blank')`;
+    return `<div class="nl-item" onclick="${onclick}">
+      <div class="nl-num">${i+11}</div>
+      <div><div class="nl-cat">${catIcons[nCat]||'📰'} ${nCat.toUpperCase()}</div>
+      <div class="nl-title">${n.title||''}</div>
+      <div class="nl-meta">${nSource} · ${timeAgo(nTime)} ${n.aiNotu?'· 🤖 AI':''}</div>
+      ${n.sentiment ? renderSentimentBar(n.sentiment, true) : ''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function filterCat(cat, el) {
+  document.querySelectorAll('.cat-tab, nav a').forEach(t => t.classList.remove('active'));
+  if(el) el.classList.add('active');
+  const filtered = cat === 'hepsi' ? allNews : allNews.filter(n => (n.cat===cat||n.category===cat));
+  renderAll(filtered.length ? filtered : allNews);
+}
+
+async function renderHaberler() {
+  const listEl = document.getElementById('haberList');
+  if(!listEl || !window.tumHaberlerCache) return;
+  const filtered = aktifCat === 'hepsi' ? window.tumHaberlerCache : window.tumHaberlerCache.filter(h => (h.cat||h.category) === aktifCat);
+  const gosterilecek = filtered.slice(0, gosterilen);
+  
+  // Haberleri render et
+  const listItems = gosterilecek.map((n, i) => {
+    const nCat = n.cat || n.category || 'finans';
+    const nTime = n.tarih || n.publishedAt;
+    const nSource = n.kaynak || n.source || '';
+    const onclick = "haberAc('" + (n.slug||'') + "')";
+    const skor = n.sentiment ? n.sentiment.score : 50;
+    const label = n.sentiment ? n.sentiment.label : '';
+    let barRenk = skor >= 65 ? '#22c55e' : skor <= 35 ? '#ef4444' : '#6b6b80';
+    
+    return '<div class="nl-item" onclick="' + onclick + '">' +
+      '<div class="nl-thumb" style="background-image:url(' + (n.resim || getCatImage(nCat, n.slug)) + ')">' +
+      '<span class="nl-cat">' + (catIcons[nCat]||'📰') + ' ' + nCat + '</span>' +
+      '</div>' +
+      '<div class="nl-body">' +
+      '<div class="nl-title">' + (n.title||'') + '</div>' +
+      '<div class="nl-meta">' + nSource + ' · ' + timeAgo(nTime) + (n.aiNotu?' · 🤖 AI':'') + '</div>' +
+      '<div style="display:flex;align-items:center;gap:6px;margin-top:4px">' +
+      '<div style="flex:1;height:3px;background:var(--border);border-radius:2px;overflow:hidden">' +
+      '<div style="width:' + skor + '%;height:100%;background:' + barRenk + ';border-radius:2px"></div>' +
+      '</div>' +
+      '<span style="font-size:9px;color:' + barRenk + ';font-weight:600">' + label + ' ' + skor + '</span>' +
+      '</div>' +
+      '</div>' +
+      '</div>';
+  }).join('');
+  
+  if(listEl) listEl.innerHTML = listItems;
+  
+  // Daha fazla göster butonu
+  const loadBtn = document.getElementById('loadMoreBtn');
+  if(loadBtn) {
+    if(gosterilen < filtered.length) {
+      loadBtn.style.display = 'block';
+      loadBtn.textContent = 'Daha Fazla Göster (' + (filtered.length - gosterilen) + ' haber daha)';
+    } else {
+      loadBtn.style.display = 'none';
+    }
+  }
+}
+
+async function fetchFromBackend() {
+  try {
+    const res = await fetch(API_URL + '/api/haberler?limit=50');
+    const data = await res.json();
+    if(data && data.length > 0) {
+      allNews = data;
+      renderAll(allNews);
+      updateBreaking(data);
+      updateXBotStats();
+    }
+  } catch(e) {
+    console.log('Backend bağlanamadı:', e.message);
+  }
+}
+
+async function updateBreaking(news) {
+  if(!news || !news.length) return;
+  breakingHaberler = news.slice(0, 8).filter(h => h.title);
+  const headlines = breakingHaberler.map(h => h.title);
+  breakingIndex = 0;
+  if(headlines[0]) document.getElementById('breakingText').textContent = headlines[0];
+  
+  setInterval(async () => {
+    breakingIndex = (breakingIndex + 1) % 101;
+    if(breakingIndex === 100) {
+      // Sentiment mesajı göster
+      try {
+        const r = await fetch(API_URL + '/api/sentiment');
+        const s = await r.json();
+        document.getElementById('breakingText').textContent = 
+          '🧠 AI Piyasa Duygusu: ' + s.etiket + ' (' + s.skor + '/100) — ' + s.toplamHaber + ' haber analiz edildi → anlikhaber.com';
+      } catch(e) {}
+    } else {
+      const idx = breakingIndex % headlines.length;
+      document.getElementById('breakingText').textContent = headlines[idx];
+    }
+  }, 7000);
+}
+
+async function updateXBotStats() {
+  try {
+    if(allNews && allNews[0]) {
+      const h = allNews[0];
+      const title = h.title || '';
+      const url = h.bizimUrl || 'anlikhaber.com';
+      document.getElementById('lastTweetEl').textContent = '📊 ' + title.substring(0,120) + (title.length > 120 ? '...' : '') + '\n\n🔗 ' + url;
+    }
+  } catch(e) {}
+}
+
+// HABER DETAY
+function haberAc(slug) {
+  if(!slug) return;
+  // Görüntülenmeyi say
+  fetch(API_URL + '/api/goruntulendi/' + slug, { method: 'POST' }).catch(() => {});
+  history.pushState({slug}, '', '/haber/'+slug);
+  document.querySelector('.container').style.display = 'none';
+  document.querySelector('.bottom-ads').style.display = 'none';
+  document.getElementById('detayPage').style.display = 'block';
+  window.scrollTo(0,0);
+
+  const local = allNews.find(h => h.slug === slug);
+  if(local) { renderDetay(local); yukleIlgili(slug, local.cat||local.category); }
+
+  fetch(API_URL + '/api/haber/' + slug)
+    .then(r => r.json())
+    .then(h => { renderDetay(h); yukleIlgili(slug, h.cat||h.category); })
+    .catch(() => {});
+}
+
+function renderDetay(h) {
+  // Google Discover & SEO optimizasyonu
+  document.title = (h.title || '') + ' — AnlıkHaber';
+  
+  // metaDesc öncelikli kullan (AI ürettiyse), yoksa description
+  const desc = h.metaDesc || (h.description || '').substring(0, 160);
+  const haberImg = h.resim || getCatImage(h.cat || 'finans', h.slug);
+  const haberUrl = h.bizimUrl || window.location.href;
+
+  // Meta etiketleri güncelle
+  const setMeta = (sel, val) => { const el = document.querySelector(sel); if(el) el.content = val; };
+  const setMetaProp = (prop, val) => { const el = document.querySelector('meta[property="'+prop+'"]'); if(el) el.content = val; };
+
+  setMeta('meta[name="description"]', desc);
+  setMeta('meta[name="keywords"]', (h.cat||'finans') + ', borsa, ' + (h.title||'').substring(0,50));
+  
+  // Open Graph
+  setMetaProp('og:title', h.title + ' — AnlıkHaber');
+  setMetaProp('og:description', desc);
+  setMetaProp('og:url', haberUrl);
+  setMetaProp('og:image', haberImg);
+  setMetaProp('og:type', 'article');
+  
+  // Twitter Card
+  setMeta('meta[name="twitter:title"]', h.title + ' — AnlıkHaber');
+  setMeta('meta[name="twitter:description"]', desc);
+  setMeta('meta[name="twitter:image"]', haberImg);
+
+  // Canonical URL
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if(canonical) canonical.href = haberUrl;
+
+  // Google Discover için tam NewsArticle Schema
+  const existing = document.getElementById('newsArticleSchema');
+  if(existing) existing.remove();
+  const schema = document.createElement('script');
+  schema.type = 'application/ld+json';
+  schema.id = 'newsArticleSchema';
+  schema.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": h.title || '',
+    "description": desc,
+    "url": haberUrl,
+    "datePublished": h.tarih || new Date().toISOString(),
+    "dateModified": h.tarih || new Date().toISOString(),
+    "author": {
+      "@type": "Organization",
+      "name": h.kaynak || "AnlıkHaber",
+      "url": "https://anlikhaber.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AnlıkHaber",
+      "url": "https://anlikhaber.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://anlikhaber.com/logo.png",
+        "width": 200,
+        "height": 60
+      }
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": haberImg,
+      "width": 1200,
+      "height": 675
+    },
+    "articleSection": h.cat || "finans",
+    "inLanguage": "tr",
+    "isAccessibleForFree": true,
+    "keywords": (h.cat||'finans') + ', borsa, ekonomi, finans haberleri',
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": haberUrl
+    }
+  });
+  document.head.appendChild(schema);
+  
+  // imagePrompt varsa console'a yaz (ileride Imagen entegrasyonu için)
+  if(h.imagePrompt) console.log('Görsel prompt:', h.imagePrompt);
+  currentHaber = h;
+  const cat = getField(h,'cat','category') || 'haber';
+  const source = getField(h,'kaynak') || (h.source&&h.source.name) || 'AnlıkHaber';
+  const time = getField(h,'tarih','publishedAt');
+
+  document.getElementById('detayCat').textContent = cat.toUpperCase();
+  document.getElementById('detayBreadCat').textContent = cat.charAt(0).toUpperCase()+cat.slice(1);
+  document.getElementById('detayTitle').textContent = h.title || '';
+  document.getElementById('detaySource').textContent = source;
+  document.getElementById('detayTime').textContent = timeAgo(time);
+  document.getElementById('detayKaynakAdi').textContent = source;
+  document.getElementById('detayKaynakLink').href = getField(h,'orijinalUrl','kaynakUrl','link','url') || '#';
+  document.getElementById('detayAiNotuText').textContent = h.aiNotu || ('Bu içerik '+source+' kaynağından derlenmiştir.');
+  
+  // Sentiment bar - haber detay
+  const sentWrap = document.getElementById('detaySentimentWrap');
+  if(sentWrap && h.sentiment) {
+    var su = h.sentiment.uyari || '';
+    sentWrap.innerHTML = '<div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 16px">' +
+      '<div style="font-size:11px;color:var(--muted);margin-bottom:8px;display:flex;align-items:center;gap:6px">' +
+      '<span>📊 Haber Duygu Skoru</span>' +
+      '<span title="' + su + '" style="cursor:help;opacity:.6">ℹ</span>' +
+      '</div>' +
+      renderSentimentBar(h.sentiment) +
+      '<div style="font-size:9px;color:var(--muted);margin-top:8px;line-height:1.5;opacity:.7">' + su + '</div>' +
+      '</div>';
+  }
+
+  const resimWrap = document.getElementById('detayResimWrap');
+  const detayImg = h.resim || getCatImage(h.cat || h.category || 'finans');
+  resimWrap.innerHTML = `<img src="${detayImg}" style="width:100%;max-height:400px;object-fit:cover;border-radius:10px" onerror="this.src='${defaultImg}'" loading="lazy">`;
+
+  const icerik = h.content || h.description || '';
+  if(icerik && icerik.trim().length > 50) {
+    document.getElementById('detayContent').innerHTML = icerik.split('\n').filter(p=>p.trim()).map(p=>'<p>'+p+'</p>').join('');
+  } else {
+    // İçerik yoksa kaynağa yönlendir
+    document.getElementById('detayContent').innerHTML = 
+      '<p style="color:var(--muted)">' + (h.description || 'Bu haber için detaylı içerik mevcut değil.') + '</p>' +
+      '<p><a href="' + (h.orijinalUrl||h.kaynakUrl||'#') + '" target="_blank" style="color:var(--accent);font-weight:500">Haberin tamamını ' + (h.kaynak||'kaynakta') + ' oku →</a></p>';
+  }
+}
+
+function yukleIlgili(slug, cat) {
+  fetch(API_URL + '/api/ilgili/' + slug)
+    .then(r => r.json())
+    .then(haberler => { renderIlgili(haberler.length ? haberler : allNews.filter(h=>h.slug!==slug).slice(0,4)); })
+    .catch(() => { renderIlgili(allNews.filter(h=>h.slug!==slug).slice(0,4)); });
+}
+
+function renderIlgili(haberler) {
+  document.getElementById('ilgiliGrid').innerHTML = haberler.map(h => `
+    <div class="ilgili-card" onclick="haberAc('${h.slug}')">
+      <div class="ilgili-cat">${(getField(h,'cat','category')||'haber').toUpperCase()}</div>
+      <div class="ilgili-title">${h.title||''}</div>
+    </div>`).join('') || '<div style="color:var(--muted);font-size:12px">İlgili haber bulunamadı.</div>';
+}
+
+function geriDon() {
+  history.pushState({}, '', '/');
+  // Meta etiketleri sıfırla
+  document.title = 'AnlıkHaber — Son Dakika Finans ve Piyasa Haberleri';
+  const metaDesc = document.querySelector('meta[name="description"]');
+  if(metaDesc) metaDesc.content = 'Türkiye ve dünyadan anlık finans haberleri, borsa, döviz, kripto ve ekonomi gelişmeleri.';
+  const canonical = document.querySelector('link[rel="canonical"]');
+  if(canonical) canonical.href = 'https://anlikhaber.com';
+  document.querySelector('.container').style.display = 'block';
+  document.querySelector('.bottom-ads').style.display = 'flex';
+  document.getElementById('detayPage').style.display = 'none';
+  window.scrollTo(0,0);
+}
+
+function xPaylas() {
+  if(!currentHaber) return;
+  const url = currentHaber.bizimUrl || window.location.href;
+  window.open('https://twitter.com/intent/tweet?text='+encodeURIComponent(currentHaber.title+'\n'+url+'\n#anlikhaber'), '_blank');
+}
+
+window.addEventListener('popstate', e => {
+  if(e.state && e.state.slug) haberAc(e.state.slug);
+  else geriDon();
+});
+
+if(window.location.pathname.startsWith('/haber/')) {
+  const slug = window.location.pathname.replace('/haber/','');
+  if(slug) setTimeout(() => haberAc(slug), 1200);
+}
+
+async function subscribe() {
+  const v = document.getElementById('emailInput').value;
+  if(!v||!v.includes('@')) { alert('Geçerli e-posta girin.'); return; }
+  const kvkk = document.getElementById('kvkkOnay');
+  if(kvkk && !kvkk.checked) { alert('Devam etmek için KVKK onayı vermeniz gerekmektedir.'); return; }
+  
+  const btn = document.querySelector('.email-widget button');
+  btn.textContent = 'Gönderiliyor...';
+  btn.disabled = true;
+  
+  try {
+    const res = await fetch(API_URL + '/api/abone', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: v })
+    });
+    const data = await res.json();
+    if(data.success) {
+      btn.textContent = '✓ Abone Oldunuz!';
+      btn.style.background = '#22c55e';
+      document.getElementById('emailInput').value = '';
+      setTimeout(() => {
+        btn.textContent = 'Ücretsiz Abone Ol';
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
+    } else {
+      alert('Hata: ' + (data.error || 'Tekrar deneyin'));
+      btn.textContent = 'Ücretsiz Abone Ol';
+      btn.disabled = false;
+    }
+  } catch(e) {
+    alert('Bağlantı hatası, tekrar deneyin.');
+    btn.textContent = 'Ücretsiz Abone Ol';
+    btn.disabled = false;
+  }
+}
+
+function loadMore() {
+  const cur = allNews.length;
+  fetch(API_URL + '/api/haberler?limit=100')
+    .then(r => r.json())
+    .then(d => { allNews = d; renderAll(d); })
+    .catch(() => {});
+}
+
+// CANLI HABER AKIŞI
+function openLiveFeed() {
+  document.getElementById('liveOverlay').classList.add('open');
+  document.getElementById('livePanel').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  renderLiveFeed();
+}
+
+function closeLiveFeed() {
+  document.getElementById('liveOverlay').classList.remove('open');
+  document.getElementById('livePanel').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function renderLiveFeed() {
+  const feed = document.getElementById('liveFeed');
+  if(!allNews || !allNews.length) {
+    feed.innerHTML = '<div style="text-align:center;padding:40px;color:var(--muted);font-size:13px">Haber bulunamadı.</div>';
+    return;
+  }
+
+  const catIcons = {finans:'💰',piyasa:'📈',kripto:'₿',ekonomi:'🏛',borsa:'📊',doviz:'💱',emtia:'🥇',altin:'🥇',analiz:'🔍'};
+
+// Kategori bazlı 80 farklı görsel (her kategori 10 adet)
+// Sadece finansal objeler — insan/yüz fotoğrafı yok
+const catImageSets = {
+  finans: [
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75', // grafik ekran
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75', // borsa ekranı
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75', // para
+    'https://images.unsplash.com/photo-1559526324-593bc073d938?w=400&q=75', // grafik
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75', // dolar
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75', // grafik
+    'https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=400&q=75', // bitcoin
+    'https://images.unsplash.com/photo-1642790551116-18a150d073a0?w=400&q=75', // kripto
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75', // veri
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75', // laptop grafik
+  ],
+  borsa: [
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400&q=75',
+    'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400&q=75',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1559526324-593bc073d938?w=400&q=75',
+  ],
+  ekonomi: [
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+    'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=400&q=75',
+  ],
+  kripto: [
+    'https://images.unsplash.com/photo-1640161704729-cbe966a08476?w=400&q=75',
+    'https://images.unsplash.com/photo-1621416894569-0f39ed31d247?w=400&q=75',
+    'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?w=400&q=75',
+    'https://images.unsplash.com/photo-1605792657660-596af9009e82?w=400&q=75',
+    'https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&q=75',
+    'https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=400&q=75',
+    'https://images.unsplash.com/photo-1621504450181-5d356f61d307?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+  ],
+  doviz: [
+    'https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1559526324-593bc073d938?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+  ],
+  emtia: [
+    'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=400&q=75',
+    'https://images.unsplash.com/photo-1624365168968-f283d506adc3?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+  ],
+  altin: [
+    'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=400&q=75',
+    'https://images.unsplash.com/photo-1624365168968-f283d506adc3?w=400&q=75',
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400&q=75',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+  ],
+  analiz: [
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+    'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400&q=75',
+    'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400&q=75',
+  ],
+  piyasa: [
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=75',
+    'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=400&q=75',
+    'https://images.unsplash.com/photo-1535320903710-d993d3d77d29?w=400&q=75',
+    'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=75',
+    'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=75',
+    'https://images.unsplash.com/photo-1640340434855-6084b1f4901c?w=400&q=75',
+    'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=75',
+    'https://images.unsplash.com/photo-1543286386-2e659306cd6c?w=400&q=75',
+    'https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?w=400&q=75',
+    'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=75',
+  ],
+};
+
+const defaultImgSet = catImageSets.finans;
+const defaultImg = defaultImgSet[0];
+
+// Slug'a göre tutarlı ama çeşitli görsel seç
+// Sentiment bar render fonksiyonu
+function renderSentimentBar(s, mini) {
+  if(!s) return '';
+  mini = mini || false;
+  var skor = s.score || 50;
+  var renk;
+  if(skor <= 20) renk = '#ef4444';
+  else if(skor <= 35) renk = '#f97316';
+  else if(skor <= 50) renk = '#f59e0b';
+  else if(skor <= 65) renk = '#6b7280';
+  else if(skor <= 80) renk = '#22c55e';
+  else renk = '#e8c84a';
+  
+  var h = mini ? '3px' : '4px';
+  var fs = mini ? '8px' : '9px';
+  var uyari = s.uyari || 'Haber duygu skoru';
+  
+  return '<div class="sentiment-bar-wrap" title="' + uyari + '">' +
+    '<div class="sentiment-bar-bg" style="height:' + h + '">' +
+    '<div class="sentiment-bar-fill" style="width:' + skor + '%;background:' + renk + '"></div>' +
+    '</div>' +
+    '<span class="sentiment-score-label" style="color:' + renk + ';font-size:' + fs + '">' + (s.label||'') + ' ' + skor + '</span>' +
+    '<span class="sentiment-info" title="' + uyari + '">ℹ</span>' +
+    '</div>';
+}
+
+function getCatImage(cat, slug) {
+  const imgs = catImageSets[cat] || catImageSets.finans;
+  if(slug) {
+    // Slug'dan sayısal hash üret — aynı haber hep aynı görseli göstersin
+    let hash = 0;
+    for(let i = 0; i < slug.length; i++) hash = ((hash << 5) - hash) + slug.charCodeAt(i);
+    return imgs[Math.abs(hash) % imgs.length];
+  }
+  return imgs[Math.floor(Math.random() * imgs.length)];
+}
+  const now = Date.now();
+
+  // Kronolojik sıralama - en yeni önce
+  const sortedNews = [...allNews].sort((a, b) => {
+    const ta = new Date(a.tarih || a.publishedAt || 0);
+    const tb = new Date(b.tarih || b.publishedAt || 0);
+    return tb - ta;
+  });
+
+  feed.innerHTML = sortedNews.map((n, i) => {
+    const cat = n.cat || n.category || 'haber';
+    const time = n.tarih || n.publishedAt;
+    const source = n.kaynak || (n.source && n.source.name) || 'AnlıkHaber';
+    const dk = time ? Math.floor((now - new Date(time)) / 60000) : null;
+    const isYeni = dk !== null && dk < 30;
+    const timeStr = dk === null ? '—' : dk < 1 ? 'şimdi' : dk < 60 ? dk + ' dk önce' : Math.floor(dk/60) + ' sa önce';
+    const slug = n.slug || '';
+    const onclick = slug ? `haberAc('${slug}');closeLiveFeed()` : '';
+
+    return `<div class="feed-item${isYeni?' yeni':''}" onclick="${onclick}">
+      ${isYeni ? '<div class="feed-new-badge">YENİ</div>' : ''}
+      <div class="feed-time">
+        <div class="feed-time-dot"></div>
+        <span>${timeStr}</span>
+        <span class="feed-cat">${catIcons[cat]||'📰'} ${cat.toUpperCase()}</span>
+      </div>
+      <div class="feed-title">${n.title || ''}</div>
+      <div class="feed-source">${source}</div>
+    </div>`;
+  }).join('');
+
+  const now2 = new Date();
+  document.getElementById('liveLastUpdate').textContent = now2.toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit'});
+  document.getElementById('liveTotalCount').textContent = allNews.length;
+}
+
+// ESC ile kapat
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeLiveFeed(); });
+
+function adClick(n) { console.log('Ad:', n); }
+
+// FOOTER SAYFALARI
+function sayfaAc(tip) {
+  const sayfalar = {
+    hakkimizda: {
+      baslik: 'Hakkımızda',
+      icerik: `
+        <h2 style="color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:8px">AnlıkHaber</h2>
+        <p style="color:var(--muted);font-size:12px;margin-bottom:24px">anlikhaber.com</p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">Misyonumuz</h3>
+        <p style="line-height:1.8;margin-bottom:20px;color:var(--muted)">
+          Türkiye ve dünyadan finans, ekonomi, borsa, döviz ve kripto para haberlerini anlık olarak takip eden yatırımcılara ve okuyuculara doğru, hızlı ve anlaşılır haber sunmak.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">Vizyonumuz</h3>
+        <p style="line-height:1.8;margin-bottom:20px;color:var(--muted)">
+          Türkiye'nin en güvenilir dijital finans haber platformu olmak. Teknoloji ve yapay zeka destekli altyapımızla haberleri anında okuyuculara ulaştırmak.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">Ne Yapıyoruz?</h3>
+        <ul style="line-height:2.2;padding-left:20px;color:var(--muted);margin-bottom:20px">
+          <li>Küresel finans kaynaklarından anlık haber derliyoruz</li>
+          <li>Yapay zeka ile haberleri Türkçeye çevirip özetliyoruz</li>
+          <li>TradingView entegrasyonu ile canlı piyasa verileri sunuyoruz</li>
+          <li>Her sabah 07:00'de günlük finans bülteni gönderiyoruz</li>
+          <li>@anlikhaber22 X hesabından anlık paylaşımlar yapıyoruz</li>
+        </ul>
+
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px">
+          <div style="font-size:12px;color:var(--muted);margin-bottom:8px;letter-spacing:1px;text-transform:uppercase">Adres</div>
+          <div style="color:var(--text);line-height:1.8">
+            Kadıköy, İstanbul<br>
+            <a href="mailto:reklam@anlikhaber.com" style="color:var(--accent)">reklam@anlikhaber.com</a>
+          </div>
+        </div>
+      `
+    },
+    reklam: {
+      baslik: 'Reklam Ver',
+      icerik: `
+        <h2 style="color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:16px">Reklam & Sponsorluk</h2>
+        <p style="line-height:1.8;margin-bottom:24px;color:var(--muted)">
+          AnlıkHaber'de reklam vermek için aşağıdaki adrese mail atmanız yeterli. En kısa sürede size dönüş yapacağız.
+        </p>
+        <a href="mailto:reklam@anlikhaber.com?subject=Reklam Talebi - AnlıkHaber&body=Merhaba,%0D%0A%0D%0AAnlıkHaber'de reklam vermek istiyorum.%0D%0A%0D%0AŞirket:%0D%0ABütçe:%0D%0AHedef kitle:%0D%0A%0D%0ASaygılarımla" 
+           style="display:inline-block;background:var(--accent);color:#0a0a0f;padding:14px 28px;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px;margin-bottom:28px">
+          📧 reklam@anlikhaber.com →
+        </a>
+        <h3 style="color:var(--accent);margin:0 0 14px">Reklam Seçenekleri</h3>
+        <div style="display:grid;gap:10px">
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px">
+            <div style="font-weight:600;margin-bottom:4px">📌 Leaderboard Banner (728×90)</div>
+            <div style="color:var(--muted);font-size:12px">Sayfanın üst kısmında — En yüksek görünürlük</div>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px">
+            <div style="font-weight:600;margin-bottom:4px">📌 Sidebar Banner (300×250 / 300×600)</div>
+            <div style="color:var(--muted);font-size:12px">Sağ sidebar — Sürekli görünür alan</div>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px">
+            <div style="font-weight:600;margin-bottom:4px">📌 Sponsorlu İçerik</div>
+            <div style="color:var(--muted);font-size:12px">Haber formatında tanıtım yazısı</div>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px">
+            <div style="font-weight:600;margin-bottom:4px">📌 Sabah Bülteni Sponsorluğu</div>
+            <div style="color:var(--muted);font-size:12px">Günlük e-posta bülteninde sponsor alanı</div>
+          </div>
+        </div>
+      `
+    },
+    iletisim: {
+      baslik: 'İletişim',
+      icerik: `
+        <h2 style="color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:24px">İletişim</h2>
+        <div style="display:grid;gap:12px;margin-bottom:24px">
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px">
+            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px">Reklam & İş Birliği</div>
+            <a href="mailto:reklam@anlikhaber.com" style="color:var(--accent);font-size:15px;font-weight:500;text-decoration:none">reklam@anlikhaber.com</a>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px">
+            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px">X (Twitter)</div>
+            <a href="https://x.com/anlikhaber22" target="_blank" style="color:var(--accent);font-size:15px;font-weight:500;text-decoration:none">@anlikhaber22</a>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px">
+            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px">Adres</div>
+            <div style="color:var(--text);font-size:14px">Kadıköy, İstanbul</div>
+          </div>
+          <div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px">
+            <div style="font-size:11px;color:var(--muted);margin-bottom:6px;text-transform:uppercase;letter-spacing:1px">Web</div>
+            <a href="https://anlikhaber.com" style="color:var(--accent);font-size:15px;font-weight:500;text-decoration:none">anlikhaber.com</a>
+          </div>
+        </div>
+      `
+    },
+    gizlilik: {
+      baslik: 'Gizlilik Politikası',
+      icerik: `
+        <h2 style="color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:8px">Gizlilik Politikası</h2>
+        <p style="color:var(--muted);font-size:12px;margin-bottom:24px">Son güncelleme: Mayıs 2026</p>
+        
+        <h3 style="color:var(--accent);margin:0 0 10px">1. Toplanan Veriler</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          AnlıkHaber olarak yalnızca bülten aboneliği sırasında e-posta adresinizi topluyoruz. 
+          Bunun dışında kişisel veri toplanmamaktadır.
+        </p>
+        
+        <h3 style="color:var(--accent);margin:0 0 10px">2. Verilerin Kullanımı</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          E-posta adresiniz yalnızca günlük finans bülteni göndermek amacıyla kullanılmaktadır. 
+          Hiçbir üçüncü tarafla paylaşılmaz, satılmaz veya kiralanmaz.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">3. Çerezler</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          Sitemiz Google AdSense reklam servisi için çerez kullanmaktadır. 
+          Bu çerezler tarayıcı ayarlarınızdan devre dışı bırakılabilir.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">4. Abonelikten Çıkma</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          Bülten aboneliğinizi her zaman iptal edebilirsiniz. 
+          Mail altındaki "Abonelikten çık" linkini kullanabilir veya 
+          <a href="mailto:reklam@anlikhaber.com" style="color:var(--accent)">reklam@anlikhaber.com</a> adresine yazabilirsiniz.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">5. İletişim</h3>
+        <p style="line-height:1.8;color:var(--muted)">
+          Gizlilik ile ilgili sorularınız için: 
+          <a href="mailto:reklam@anlikhaber.com" style="color:var(--accent)">reklam@anlikhaber.com</a>
+        </p>
+      `
+    },
+    kvkk: {
+      baslik: 'KVKK Aydınlatma Metni',
+      icerik: `
+        <h2 style="color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:8px">KVKK Aydınlatma Metni</h2>
+        <p style="color:var(--muted);font-size:12px;margin-bottom:24px">6698 Sayılı Kişisel Verilerin Korunması Kanunu Kapsamında · Son güncelleme: Mayıs 2026</p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">1. Veri Sorumlusu</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          AnlıkHaber (anlikhaber.com), Kadıköy, İstanbul olarak 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında veri sorumlusudur.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">2. İşlenen Kişisel Veriler</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          Yalnızca bülten aboneliği kapsamında <strong style="color:var(--text)">e-posta adresi</strong> işlenmektedir. Bunun dışında herhangi bir kişisel veri toplanmamaktadır.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">3. İşleme Amaçları ve Hukuki Dayanağı</h3>
+        <ul style="line-height:2.2;padding-left:20px;color:var(--muted);margin-bottom:16px">
+          <li>Günlük finans bülteni göndermek (Açık rıza — KVKK Md. 5/1)</li>
+          <li>Abonelik yönetimi (Açık rıza — KVKK Md. 5/1)</li>
+          <li>Yasal yükümlülüklerin yerine getirilmesi (KVKK Md. 5/2-ç)</li>
+        </ul>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">4. Verilerin Aktarımı</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          E-posta adresiniz, bülten gönderimi amacıyla yalnızca Brevo (Sendinblue) e-posta altyapı hizmet sağlayıcısına aktarılmaktadır. Herhangi bir üçüncü tarafla ticari amaçla paylaşılmaz, satılmaz veya kiralanmaz.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">5. Saklama Süresi</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          Verileriniz abonelik süresince saklanır. Abonelikten çıkmanız halinde 30 gün içinde sistemden silinir.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">6. Haklarınız (KVKK Madde 11)</h3>
+        <ul style="line-height:2.2;padding-left:20px;color:var(--muted);margin-bottom:16px">
+          <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+          <li>İşlenmişse bilgi talep etme</li>
+          <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+          <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
+          <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
+          <li>Silinmesini veya yok edilmesini isteme</li>
+          <li>Düzeltme, silme veya yok etme işlemlerinin aktarılan üçüncü kişilere bildirilmesini isteme</li>
+          <li>Aleyhinize bir sonucun ortaya çıkmasına itiraz etme</li>
+          <li>Zararın giderilmesini talep etme</li>
+        </ul>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">7. Başvuru</h3>
+        <p style="line-height:1.8;color:var(--muted)">
+          KVKK kapsamındaki tüm talepleriniz için kimliğinizi doğrulayan belgelerle birlikte:<br>
+          <a href="mailto:reklam@anlikhaber.com" style="color:var(--accent)">reklam@anlikhaber.com</a><br><br>
+          adresine yazabilirsiniz. Talepleriniz en geç 30 gün içinde yanıtlanacaktır.
+        </p>
+      `
+    },
+    sartlar: {
+      baslik: 'Kullanım Şartları',
+      icerik: `
+        <h2 style="color:var(--accent);font-family:'Playfair Display',serif;margin-bottom:8px">Kullanım Şartları ve Koşulları</h2>
+        <p style="color:var(--muted);font-size:12px;margin-bottom:24px">Son güncelleme: Mayıs 2026 · © 2026 AnlıkHaber — Tüm Hakları Saklıdır</p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">1. Genel</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          AnlıkHaber (anlikhaber.com) platformunu kullanarak aşağıdaki şart ve koşulları kabul etmiş sayılırsınız. Bu şartları kabul etmiyorsanız platformu kullanmayı bırakınız.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">2. Hizmetin Kapsamı</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          AnlıkHaber; finans, ekonomi, borsa, döviz ve kripto para haberlerini otomatik ve yapay zeka destekli teknoloji ile derleyen bir haber platformudur. Sitedeki içerikler bilgilendirme amaçlıdır; yatırım tavsiyesi niteliği taşımaz.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">3. Sorumluluk Reddi</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          AnlıkHaber'de yer alan haberler ve analizler yatırım tavsiyesi değildir. Platform, içeriklerin doğruluğu, eksiksizliği veya güncelliği konusunda herhangi bir garanti vermemektedir. Platformdaki bilgilere dayanılarak yapılan yatırım kararlarından AnlıkHaber sorumlu tutulamaz.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">4. Fikri Mülkiyet</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          AnlıkHaber üzerindeki tasarım, logo, yazılım ve özgün içerikler AnlıkHaber'e aittir ve izinsiz kopyalanamaz, çoğaltılamaz veya dağıtılamaz. Kaynaklarda belirtilen haberler ilgili yayın organlarının mülkiyetindedir.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">5. Üçüncü Taraf Bağlantıları</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          Platformumuzda üçüncü taraf web sitelerine bağlantılar yer alabilir. Bu sitelerin içeriklerinden AnlıkHaber sorumlu değildir. Söz konusu siteleri ziyaret etmeniz halinde kendi gizlilik politikalarını incelemenizi tavsiye ederiz.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">6. Reklam</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          Platformumuzda Google AdSense ve doğrudan satış yoluyla reklam gösterilmektedir. Reklamlarda yer alan ürün ve hizmetlerden AnlıkHaber sorumlu değildir.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">7. Değişiklik Hakkı</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          AnlıkHaber, bu kullanım şartlarını önceden haber vermeksizin değiştirme hakkını saklı tutar. Değişiklikler platformda yayımlandıktan sonra geçerli olur. Platformu kullanmaya devam etmeniz değişiklikleri kabul ettiğiniz anlamına gelir.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">8. Uygulanacak Hukuk</h3>
+        <p style="line-height:1.8;margin-bottom:16px;color:var(--muted)">
+          Bu şartlar Türkiye Cumhuriyeti kanunlarına tabidir. Uyuşmazlıklarda İstanbul mahkemeleri yetkilidir.
+        </p>
+
+        <h3 style="color:var(--accent);margin:0 0 10px">9. İletişim</h3>
+        <p style="line-height:1.8;color:var(--muted)">
+          <a href="mailto:reklam@anlikhaber.com" style="color:var(--accent)">reklam@anlikhaber.com</a>
+        </p>
+      `
+    }
+  };
+
+  const sayfa = sayfalar[tip];
+  if (!sayfa) return;
+
+  // Modal oluştur
+  const existing = document.getElementById('sayfaModal');
+  if (existing) existing.remove();
+
+  const modal = document.createElement('div');
+  modal.id = 'sayfaModal';
+  modal.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:1000;display:flex;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)';
+  modal.innerHTML = `
+    <div style="background:var(--bg);border:1px solid var(--border);border-radius:12px;max-width:680px;width:100%;max-height:85vh;overflow-y:auto;padding:32px;position:relative">
+      <button onclick="document.getElementById('sayfaModal').remove()" style="position:absolute;top:16px;right:16px;background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:6px;padding:6px 12px;cursor:pointer;font-family:inherit;font-size:13px">✕ Kapat</button>
+      ${sayfa.icerik}
+    </div>
+  `;
+  modal.addEventListener('click', e => { if(e.target === modal) modal.remove(); });
+  document.body.appendChild(modal);
+}
+
+function updateClock() {
+  const now = new Date();
+  document.getElementById('clockEl').textContent = now.toLocaleTimeString('tr-TR',{hour:'2-digit',minute:'2-digit'}) + ' · ' + now.toLocaleDateString('tr-TR',{day:'numeric',month:'long'});
+}
+
+// GECE/GÜNDÜZ MODU
+function toggleTheme() {
+  const isLight = document.body.classList.toggle('light-mode');
+  const btn = document.getElementById('themeBtn');
+  if(isLight) {
+    btn.textContent = '🌞 Gündüz';
+    localStorage.setItem('theme', 'light');
+  } else {
+    btn.textContent = '🌙 Gece';
+    localStorage.setItem('theme', 'dark');
+  }
+}
+
+// Kaydedilen temayı uygula
+(function() {
+  const saved = localStorage.getItem('theme');
+  if(saved === 'light') {
+    document.body.classList.add('light-mode');
+    // Button text will be set after DOM loads
+    setTimeout(() => {
+      const btn = document.getElementById('themeBtn');
+      if(btn) btn.textContent = '🌞 Gündüz';
+    }, 100);
+  }
+})();
+
+// SENTIMENT GAUGE
+function drawGauge(canvas, skor) {
+  const ctx = canvas.getContext('2d');
+  const w = canvas.width, h = canvas.height;
+  ctx.clearRect(0, 0, w, h);
+
+  const cx = w / 2, cy = h - 10;
+  const r = h - 20;
+
+  // Arka plan yay
+  const gradient = ctx.createLinearGradient(0, 0, w, 0);
+  gradient.addColorStop(0, '#ef4444');
+  gradient.addColorStop(0.25, '#f97316');
+  gradient.addColorStop(0.5, '#6b6b80');
+  gradient.addColorStop(0.75, '#22c55e');
+  gradient.addColorStop(1, '#e8c84a');
+
+  ctx.beginPath();
+  ctx.arc(cx, cy, r, Math.PI, 0);
+  ctx.lineWidth = 14;
+  ctx.strokeStyle = '#1e1e2a';
+  ctx.stroke();
+
+  // Renkli yay (skor kadar)
+  const oran = skor / 100;
+  ctx.beginPath();
+  ctx.arc(cx, cy, r, Math.PI, Math.PI + oran * Math.PI);
+  ctx.lineWidth = 14;
+  ctx.strokeStyle = gradient;
+  ctx.lineCap = 'round';
+  ctx.stroke();
+
+  // İbre
+  const aci = Math.PI + oran * Math.PI;
+  const ix = cx + (r - 8) * Math.cos(aci);
+  const iy = cy + (r - 8) * Math.sin(aci);
+  ctx.beginPath();
+  ctx.moveTo(cx, cy);
+  ctx.lineTo(ix, iy);
+  ctx.lineWidth = 3;
+  ctx.strokeStyle = '#e8c84a';
+  ctx.lineCap = 'round';
+  ctx.stroke();
+
+  // Merkez nokta
+  ctx.beginPath();
+  ctx.arc(cx, cy, 5, 0, Math.PI * 2);
+  ctx.fillStyle = '#e8c84a';
+  ctx.fill();
+}
+
+// Piyasa verisi - Binance + Coinbase + fallback
+async function fetchMarketData() {
+  try {
+    const r = await fetch(API_URL + '/api/piyasa');
+    const d = await r.json();
+    if(d.usdtry) updateCell('mc-usdtry', d.usdtry, null);
+    else hideCell('mc-usdtry');
+    if(d.eurtry) updateCell('mc-eurtry', d.eurtry, null);
+    else hideCell('mc-eurtry');
+    if(d.gbptry) updateCell('mc-gbptry', d.gbptry, null);
+    else hideCell('mc-gbptry');
+    if(d.gold) updateCell('mc-gold', '$' + d.gold.toLocaleString('tr-TR'), null);
+    else hideCell('mc-gold');
+    if(d.btc) updateCell('mc-btc', '$' + parseInt(d.btc).toLocaleString('tr-TR'), parseFloat(d.btcChg));
+    else hideCell('mc-btc');
+    if(d.eth) updateCell('mc-eth', '$' + parseInt(d.eth).toLocaleString('tr-TR'), parseFloat(d.ethChg));
+    else hideCell('mc-eth');
+    hideCell('mc-bist');
+    hideCell('mc-silver');
+  } catch(e) {
+    ['mc-usdtry','mc-eurtry','mc-gbptry','mc-gold','mc-btc','mc-eth','mc-bist','mc-silver'].forEach(hideCell);
+  }
+}
+
+function formatNum(n) {
+  if(n >= 1000) return n.toLocaleString('tr-TR', {maximumFractionDigits:0});
+  return n.toLocaleString('tr-TR', {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+
+function updateCell(id, price, changePct) {
+  const cell = document.getElementById(id);
+  if(!cell) return;
+  cell.style.display = '';
+  cell.querySelector('.mc-price').textContent = price;
+  const chEl = cell.querySelector('.mc-change');
+  if(changePct !== null && changePct !== undefined) {
+    const up = changePct >= 0;
+    chEl.textContent = (up ? '▲ +' : '▼ ') + changePct.toFixed(2) + '%';
+    chEl.className = 'mc-change ' + (up ? 'mc-up' : 'mc-down');
+  } else {
+    chEl.textContent = 'canlı';
+    chEl.className = 'mc-change mc-na';
+  }
+}
+
+function hideCell(id) {
+  const cell = document.getElementById(id);
+  if(cell) cell.style.display = 'none';
+}
+
+// Özel Sayfalar
+function ozelSayfa(tip, el) {
+  // Nav active
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  if(el) el.classList.add('active');
+
+  const overlay = document.getElementById('ozelSayfaOverlay');
+  overlay.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+
+  // Tüm sayfaları gizle
+  document.querySelectorAll('.ozel-sayfa').forEach(s => s.classList.remove('active'));
+
+  const basliklar = { kurlar: '📊 Canlı Kurlar', sentiment: '🧠 Piyasa Duygu Endeksi', analizler: '🔬 Claude Derin Analizler' };
+  const rozetler = { kurlar: 'CANLI', sentiment: 'AI POWERED', analizler: 'SONNET 4' };
+  document.getElementById('ozelSayfaBaslik').textContent = basliklar[tip] || tip;
+  document.getElementById('ozelSayfaRozet').textContent = rozetler[tip] || '';
+
+  if(tip === 'kurlar') {
+    document.getElementById('kurlarSayfa').classList.add('active');
+    kurlarSayfaYukle();
+  } else if(tip === 'sentiment') {
+    document.getElementById('sentimentSayfa').classList.add('active');
+    sentimentSayfaYukle();
+  } else if(tip === 'analizler') {
+    document.getElementById('analizlerSayfa').classList.add('active');
+    analizlerSayfaYukle();
+  }
+}
+
+function ozelSayfaKapat() {
+  document.getElementById('ozelSayfaOverlay').style.display = 'none';
+  document.body.style.overflow = '';
+  document.querySelectorAll('nav a').forEach((a,i) => { if(i===0) a.classList.add('active'); else a.classList.remove('active'); });
+}
+
+async function kurlarSayfaYukle() {
+  try {
+    const r = await fetch(API_URL + '/api/piyasa');
+    const d = await r.json();
+    const set = (id, val) => { const el=document.getElementById(id); if(el) el.textContent=val; };
+    const setColor = (id, chg) => {
+      const el = document.getElementById(id);
+      if(!el) return;
+      if(chg === null) { el.textContent='canlı'; el.className='kur-degisim'; return; }
+      const up = parseFloat(chg) >= 0;
+      el.textContent = (up?'▲ +':'▼ ') + chg + '%';
+      el.style.color = up ? 'var(--green)' : 'var(--red)';
+    };
+    if(d.usdtry) { set('ks-usd', d.usdtry); setColor('ks-usd-c', null); }
+    if(d.eurtry) { set('ks-eur', d.eurtry); setColor('ks-eur-c', null); }
+    if(d.gbptry) { set('ks-gbp', d.gbptry); setColor('ks-gbp-c', null); }
+    if(d.gold) { set('ks-gold', '$' + parseInt(d.gold).toLocaleString('tr-TR')); setColor('ks-gold-c', null); }
+    if(d.btc) { set('ks-btc', '$' + parseInt(d.btc).toLocaleString('tr-TR')); setColor('ks-btc-c', d.btcChg); }
+    if(d.eth) { set('ks-eth', '$' + parseInt(d.eth).toLocaleString('tr-TR')); setColor('ks-eth-c', d.ethChg); }
+    if(d.guncelleme) set('kurGuncelleme', 'Son güncelleme: ' + new Date(d.guncelleme).toLocaleTimeString('tr-TR'));
+  } catch(e) {}
+}
+
+async function sentimentSayfaYukle() {
+  try {
+    const r = await fetch(API_URL + '/api/sentiment');
+    const s = await r.json();
+    const skor = s.skor || 50;
+    const renk = skor >= 65 ? 'var(--green)' : skor <= 35 ? 'var(--red)' : 'var(--accent)';
+    document.getElementById('ss-skor').textContent = skor + '/100';
+    document.getElementById('ss-skor').style.color = renk;
+    document.getElementById('ss-etiket').textContent = s.etiket || '—';
+    document.getElementById('ss-bar').style.width = skor + '%';
+    document.getElementById('ss-bar').style.background = renk;
+    document.getElementById('ss-guncelleme').textContent = 'Son güncelleme: ' + new Date(s.sonGuncelleme).toLocaleTimeString('tr-TR');
+    const toplam = (s.pozitif||0) + (s.notr||0) + (s.negatif||0) || 1;
+    document.getElementById('ss-poz').textContent = s.pozitif||0;
+    document.getElementById('ss-notr').textContent = s.notr||0;
+    document.getElementById('ss-neg').textContent = s.negatif||0;
+    document.getElementById('ss-poz-bar').style.width = Math.round((s.pozitif||0)/toplam*100) + '%';
+    document.getElementById('ss-notr-bar').style.width = Math.round((s.notr||0)/toplam*100) + '%';
+    document.getElementById('ss-neg-bar').style.width = Math.round((s.negatif||0)/toplam*100) + '%';
+
+    // Son 10 haberin sentiment'i
+    const haberlerEl = document.getElementById('ss-haberler');
+    if(haberlerEl && allNews.length) {
+      haberlerEl.innerHTML = allNews.slice(0,10).map(h => {
+        const hs = h.sentiment ? h.sentiment.score : 50;
+        const hr = hs >= 65 ? 'var(--green)' : hs <= 35 ? 'var(--red)' : 'var(--muted)';
+        return '<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border)">' +
+          '<div style="flex:1;font-size:12px;color:var(--text);overflow:hidden;white-space:nowrap;text-overflow:ellipsis">' + (h.title||'') + '</div>' +
+          '<div style="flex-shrink:0;width:80px;height:4px;background:var(--border);border-radius:2px;overflow:hidden"><div style="width:' + hs + '%;height:100%;background:' + hr + ';border-radius:2px"></div></div>' +
+          '<div style="font-size:11px;font-weight:700;color:' + hr + ';width:28px;text-align:right">' + hs + '</div>' +
+          '</div>';
+      }).join('');
+    }
+  } catch(e) {}
+}
+
+async function analizlerSayfaYukle() {
+  try {
+    const r = await fetch(API_URL + '/api/analizler');
+    const analizler = await r.json();
+    const el = document.getElementById('analizlerSayfaIcerik');
+    if(!analizler || !analizler.length) {
+      el.innerHTML = '<div style="color:var(--muted);text-align:center;padding:40px">Henüz analiz yok. Her 4 saatte bir güncellenir.</div>';
+      return;
+    }
+    el.innerHTML = analizler.map(a => {
+      const skor = a.sentimentSkor || 50;
+      const renk = skor >= 65 ? 'var(--green)' : skor <= 35 ? 'var(--red)' : 'var(--accent)';
+      return '<div class="analiz-card" style="margin-bottom:16px">' +
+        '<div class="analiz-badge">🔬 AI ANALİZ · ' + new Date(a.tarih).toLocaleString('tr-TR') + '</div>' +
+        '<div class="analiz-title">' + (a.haberTitle||'') + '</div>' +
+        '<div class="analiz-ozet">' + (a.ozet||'') + '</div>' +
+        '<div class="analiz-etkiler"><div class="analiz-etki-title">📌 Olası Etkiler</div>' +
+        (a.etkiler||[]).map(e => '<div class="analiz-etki-item">→ ' + e + '</div>').join('') + '</div>' +
+        '<div class="analiz-risk-fırsat">' +
+        '<div class="analiz-risk"><div class="analiz-section-title" style="color:var(--red)">⚠️ Risk</div><div style="font-size:11px;color:#c8c5c0;line-height:1.5">' + (a.riskler||'') + '</div></div>' +
+        '<div class="analiz-firsatlar"><div class="analiz-section-title" style="color:var(--green)">✨ Fırsat</div><div style="font-size:11px;color:#c8c5c0;line-height:1.5">' + (a.firsatlar||'') + '</div></div>' +
+        '</div>' +
+        '<div class="analiz-uyari">⚠️ ' + (a.uyari||'Bu analiz yatırım tavsiyesi değildir.') + '</div>' +
+        '</div>';
+    }).join('');
+  } catch(e) {}
+}
+
+// Derin Analiz
+async function derinAnalizYukle() {
+  try {
+    const r = await fetch(API_URL + '/api/analizler');
+    const analizler = await r.json();
+    
+    const el = document.getElementById('derinAnalizIcerik');
+    if(!el) return;
+    
+    if(!analizler || !analizler.length) {
+      el.innerHTML = '<div style="font-size:11px;color:var(--muted);text-align:center;padding:16px">Henüz analiz yok.<br>Her 4 saatte bir güncellenir.</div>';
+      return;
+    }
+
+    const a = analizler[0]; // En son analiz
+    const skor = a.sentimentSkor || 50;
+    const renk = skor >= 65 ? 'var(--green)' : skor <= 35 ? 'var(--red)' : 'var(--accent)';
+
+    el.innerHTML = 
+      '<div style="padding:12px">' +
+      '<div class="analiz-badge">🔬 AI ANALİZ · ' + new Date(a.tarih).toLocaleTimeString('tr-TR', {hour:'2-digit',minute:'2-digit'}) + '</div>' +
+      '<div class="analiz-title">' + (a.haberTitle||'').substring(0, 80) + '...</div>' +
+      '<div class="analiz-ozet">' + (a.ozet||'') + '</div>' +
+      '<div class="analiz-etkiler">' +
+      '<div class="analiz-etki-title">📌 Olası Etkiler</div>' +
+      (a.etkiler||[]).map(e => '<div class="analiz-etki-item">→ ' + e + '</div>').join('') +
+      '</div>' +
+      '<div class="analiz-risk-fırsat">' +
+      '<div class="analiz-risk"><div class="analiz-section-title" style="color:var(--red)">⚠️ Risk</div><div style="font-size:11px;color:#c8c5c0;line-height:1.5">' + (a.riskler||'') + '</div></div>' +
+      '<div class="analiz-firsatlar"><div class="analiz-section-title" style="color:var(--green)">✨ Fırsat</div><div style="font-size:11px;color:#c8c5c0;line-height:1.5">' + (a.firsatlar||'') + '</div></div>' +
+      '</div>' +
+      '<div class="analiz-uyari">⚠️ ' + (a.uyari||'Bu analiz yatırım tavsiyesi değildir.') + '</div>' +
+      (analizler.length > 1 ? '<div style="margin-top:10px;font-size:10px;color:var(--muted)">' + (analizler.length-1) + ' analiz daha mevcut</div>' : '') +
+      '</div>';
+  } catch(e) {
+    const el = document.getElementById('derinAnalizIcerik');
+    if(el) el.innerHTML = '<div style="font-size:11px;color:var(--muted);text-align:center;padding:16px">Analiz servisi bağlanamadı.</div>';
+  }
+}
+
+async function sentimentPopupAc() {
+  const popup = document.getElementById('sentimentPopup');
+  if(!popup) { console.log('Popup bulunamadi!'); return; }
+  popup.style.display = 'flex';
+  
+  const mesajlar = {
+    'Aşırı Karamsar (Panik)': 'Dikkat! Piyasalarda panik havası var. Haberler karamsarlık yayiyor!',
+    'Temkinli / Negatif': 'Piyasalar biraz gergin. Olumsuz haberler one cikiyor.',
+    'Nötr / Belirsiz': 'Piyasalar sakin. Haberler dengeli gorunuyor.',
+    'İyimser / Pozitif': 'Guzel haberler var! Piyasalarda iyimser bir hava esıyor.',
+    'Aşırı Coşkulu (FOMO)': 'Piyasalar coskulu! Haberler cok pozitif — dikkatli olun!'
+  };
+
+  fetch(API_URL + '/api/sentiment').then(r=>r.json()).then(s => {
+    const skor = s.skor || 50;
+    let renk = skor >= 65 ? '#22c55e' : skor <= 35 ? '#ef4444' : '#e8c84a';
+    document.getElementById('popupSkor').textContent = skor + '/100';
+    document.getElementById('popupSkor').style.color = renk;
+    document.getElementById('popupEtiket').textContent = s.etiket || '—';
+    document.getElementById('popupEtiket').style.color = renk;
+    document.getElementById('popupBar').style.width = skor + '%';
+    document.getElementById('popupBar').style.background = renk;
+    document.getElementById('popupPoz').textContent = s.pozitif || 0;
+    document.getElementById('popupNotr').textContent = s.notr || 0;
+    document.getElementById('popupNeg').textContent = s.negatif || 0;
+    const mesaj = mesajlar[s.etiket] || 'Piyasa nabzini senin icin olcuyorum!';
+    const mesajEl = document.getElementById('popupMesaj');
+    if(mesajEl) mesajEl.textContent = mesaj;
+  }).catch(()=>{
+    const mesajEl = document.getElementById('popupMesaj');
+    if(mesajEl) mesajEl.textContent = 'Veriler yukleniyor, bir an bekle!';
+  });
+}
+
+async function sentimentGuncelle() {
+  try {
+    const r = await fetch(API_URL + '/api/sentiment', {cache: 'no-cache'});
+    if(!r.ok) throw new Error('HTTP ' + r.status);
+    const s = await r.json();
+    console.log('Sentiment:', s);
+
+    document.getElementById('sentimentSkor').textContent = s.skor + '/100';
+    document.getElementById('sentimentEtiket').textContent = s.etiket || '—';
+    document.getElementById('sPoz').textContent = s.pozitif || 0;
+    document.getElementById('sNotr').textContent = s.notr || 0;
+    document.getElementById('sNeg').textContent = s.negatif || 0;
+
+    const t = new Date(s.sonGuncelleme);
+    document.getElementById('sentimentTime').textContent = t.toLocaleTimeString('tr-TR', {hour:'2-digit', minute:'2-digit'});
+
+    // Renk
+    const skor = s.skor || 50;
+    const el = document.getElementById('sentimentSkor');
+    let renk = 'var(--muted)';
+    if(skor <= 20) renk = '#ef4444';
+    else if(skor <= 40) renk = '#f97316';
+    else if(skor <= 60) renk = 'var(--muted)';
+    else if(skor <= 80) renk = 'var(--green)';
+    else renk = 'var(--accent)';
+    el.style.color = renk;
+
+    // Header badge güncelle
+    const badge = document.getElementById('sentimentBadgeText');
+    if(badge) {
+      badge.textContent = s.etiket + ' ' + s.skor + '/100';
+      badge.style.color = renk;
+      document.getElementById('sentimentBadge').style.borderColor = renk;
+    }
+
+    // Gauge çiz
+    const canvas = document.getElementById('sentimentGauge');
+    if(canvas) drawGauge(canvas, skor);
+
+  } catch(e) {
+    document.getElementById('sentimentEtiket').textContent = 'Veri yüklenemedi';
+  }
+}
+
+fetchFromBackend();
+updateClock();
+
+function plusQuizAc() {
+  window.location.href = '/plus-quiz';
+}
+fetchMarketData();
+setInterval(fetchMarketData, 60000); // Her dakika güncelle
+sentimentGuncelle();
+
+// Sentiment popup - ilk ziyarette göster
+setTimeout(() => {
+  sentimentPopupAc(); // Her ziyarette bir kez
+}, 4000);
+setInterval(sentimentGuncelle, 60 * 60 * 1000); // Saatte bir güncelle
+setInterval(updateClock, 60000);
+setInterval(fetchFromBackend, 5*60*1000);
+</script>
+
+<!-- MASKOT POPUP -->
+<style>
+@keyframes popupIn{from{opacity:0;transform:scale(.85) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes floatAnim{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.maskot-float{animation:floatAnim 3s ease-in-out infinite}
+</style>
+<div id="sentimentPopup" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9999;align-items:center;justify-content:center;backdrop-filter:blur(6px)">
+  <div style="background:#0d0d18;border:2px solid #e8c84a;border-radius:20px;max-width:420px;width:92%;position:relative;animation:popupIn .4s cubic-bezier(.34,1.56,.64,1)">
+    <button onclick="document.getElementById('sentimentPopup').style.display='none'" style="position:absolute;top:12px;right:14px;background:rgba(255,255,255,.1);border:none;color:#aaa;font-size:18px;cursor:pointer;width:28px;height:28px;border-radius:50%;font-family:inherit;line-height:1">x</button>
+    
+    <div style="background:linear-gradient(180deg,#0a1a12,#0d0d18);padding:20px 20px 0;display:flex;align-items:flex-start;gap:14px;border-radius:18px 18px 0 0">
+      <div class="maskot-float" style="flex-shrink:0">
+        <svg viewBox="0 0 100 130" width="80" height="104">
+          <ellipse cx="50" cy="85" rx="32" ry="35" fill="#1e4a32"/>
+          <ellipse cx="50" cy="82" rx="28" ry="30" fill="#22573a"/>
+          <ellipse cx="37" cy="113" rx="12" ry="9" fill="#1a3a2a"/>
+          <ellipse cx="63" cy="113" rx="12" ry="9" fill="#1a3a2a"/>
+          <ellipse cx="18" cy="75" rx="9" ry="16" fill="#1a3a2a" transform="rotate(-15 18 75)"/>
+          <ellipse cx="82" cy="75" rx="9" ry="16" fill="#1a3a2a" transform="rotate(15 82 75)"/>
+          <circle cx="88" cy="62" r="10" fill="#e8c84a"/>
+          <circle cx="88" cy="62" r="8" fill="#f0d060"/>
+          <text x="88" y="66" text-anchor="middle" font-size="9" font-weight="700" fill="#8b6914">&#8378;</text>
+          <ellipse cx="50" cy="48" rx="30" ry="28" fill="#22573a"/>
+          <polygon points="30,26 24,5 38,24" fill="#e8c84a"/>
+          <polygon points="70,26 76,5 62,24" fill="#e8c84a"/>
+          <ellipse cx="40" cy="46" rx="11" ry="12" fill="#f5f0d0"/>
+          <ellipse cx="60" cy="46" rx="11" ry="12" fill="#f5f0d0"/>
+          <ellipse cx="41" cy="47" rx="7" ry="8" fill="#1a3a00"/>
+          <ellipse cx="61" cy="47" rx="7" ry="8" fill="#1a3a00"/>
+          <circle cx="43" cy="44" r="2.5" fill="#fff"/>
+          <circle cx="63" cy="44" r="2.5" fill="#fff"/>
+          <path d="M40 62 Q50 70 60 62" stroke="#143020" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <rect x="44" y="62" width="6" height="5" rx="1" fill="#f5f0d0"/>
+          <rect x="51" y="62" width="6" height="5" rx="1" fill="#f5f0d0"/>
+        </svg>
+      </div>
+      <div style="background:#1a2a20;border:1px solid #2a4a30;border-radius:14px 14px 14px 0;padding:12px;margin-top:8px;flex:1">
+        <div style="font-size:13px;font-weight:700;color:#e8c84a;margin-bottom:4px">Merhaba! Ben AnlıkHaber!</div>
+        <div style="font-size:12px;color:#b0c8b8;line-height:1.6" id="popupMesaj">Piyasaları senin yerine izliyorum...</div>
+      </div>
+    </div>
+
+    <div style="padding:16px 20px">
+      <div style="background:#0a0a0f;border-radius:12px;padding:16px;margin-bottom:12px">
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+          <div>
+            <div style="font-size:10px;color:#6b6b80;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px">Piyasa Duygu Skoru</div>
+            <div style="font-size:36px;font-weight:700;color:#e8c84a;line-height:1" id="popupSkor">—</div>
+          </div>
+          <div style="text-align:right">
+            <div style="font-size:14px;font-weight:600;margin-bottom:4px" id="popupEtiket">Yükleniyor...</div>
+            <div style="font-size:10px;color:#6b6b80">Son 24 saat</div>
+          </div>
+        </div>
+        <div style="height:8px;background:#1e1e2a;border-radius:4px;overflow:hidden">
+          <div id="popupBar" style="height:100%;border-radius:4px;background:#e8c84a;transition:width 1s ease;width:0%"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:9px;color:#6b6b80;margin-top:4px">
+          <span>Panik 0</span><span>Notr 50</span><span>Cosku 100</span>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:12px">
+        <div style="background:#0a0a0f;border-radius:8px;padding:10px;text-align:center">
+          <div style="font-size:9px;color:#6b6b80;margin-bottom:4px">Pozitif</div>
+          <div style="font-size:20px;font-weight:700;color:#22c55e" id="popupPoz">—</div>
+        </div>
+        <div style="background:#0a0a0f;border-radius:8px;padding:10px;text-align:center">
+          <div style="font-size:9px;color:#6b6b80;margin-bottom:4px">Notr</div>
+          <div style="font-size:20px;font-weight:700;color:#6b6b80" id="popupNotr">—</div>
+        </div>
+        <div style="background:#0a0a0f;border-radius:8px;padding:10px;text-align:center">
+          <div style="font-size:9px;color:#6b6b80;margin-bottom:4px">Negatif</div>
+          <div style="font-size:20px;font-weight:700;color:#ef4444" id="popupNeg">—</div>
+        </div>
+      </div>
+
+      <div style="font-size:9px;color:#6b6b80;text-align:center;line-height:1.5;margin-bottom:12px">Bu analiz yatirim tavsiyesi icermez. Haber metinlerinin istatistiksel ozetidir.</div>
+
+      <button onclick="document.getElementById('sentimentPopup').style.display='none'" style="width:100%;background:#e8c84a;color:#0a0a0f;border:none;border-radius:10px;padding:13px;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit">Haberlere Gec!</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

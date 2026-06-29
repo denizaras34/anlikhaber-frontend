@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plus Quiz — AnlıkHaber Piyasa Testi</title>
+<meta name="description" content="Piyasa bilgini test et. Altın, BTC, döviz ve emtia sorularıyla haftalık finans quizi.">
+<link rel="canonical" href="https://anlikhaber.com/plus-quiz">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0a0a0f;--surface:#13131a;--border:#1e1e2a;--accent:#e8c84a;--text:#f0ede8;--muted:#6b6b80;--green:#22c55e;--red:#ef4444}
+body{background:var(--bg);color:var(--text);font-family:Arial,sans-serif;min-height:100vh}
+
+@keyframes goldwave{to{stroke-dashoffset:-200}}
+@keyframes floatMaskot{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes scannerLine{0%{transform:translateX(-100%)}100%{transform:translateX(200%)}}
+@keyframes whisper{0%{opacity:0;transform:scale(.9)}30%{opacity:1;transform:scale(1)}80%{opacity:1}100%{opacity:0;transform:scale(.95)}}
+
+.quiz-wrap{max-width:900px;margin:0 auto;padding:20px 16px 80px}
+
+/* HEADER */
+.quiz-header{display:flex;align-items:center;gap:16px;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.quiz-logo{font-size:20px;font-weight:900;cursor:pointer}
+.quiz-logo span{color:var(--accent)}
+.quiz-title{font-size:14px;color:var(--muted)}
+.back-btn{background:transparent;border:1px solid var(--border);border-radius:6px;padding:6px 14px;color:var(--muted);cursor:pointer;font-size:12px;font-family:inherit;margin-left:auto}
+.back-btn:hover{border-color:var(--accent);color:var(--accent)}
+
+/* HERO BANNER */
+.quiz-hero{background:var(--bg);border:1px solid #2a2500;border-radius:12px;overflow:hidden;padding:28px 32px;margin-bottom:24px;position:relative;text-align:center}
+.hero-waves{position:absolute;inset:0;pointer-events:none}
+.hero-title{font-size:48px;font-weight:900;color:var(--accent);letter-spacing:6px;font-family:Arial Black,Impact,sans-serif;position:relative;z-index:2}
+.hero-sub{font-size:13px;color:var(--muted);margin-top:8px;letter-spacing:1px;position:relative;z-index:2}
+.scan-line{position:absolute;top:0;left:-100%;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(232,200,74,.05),transparent);animation:scannerLine 4s ease-in-out infinite}
+
+/* LAYOUT */
+.quiz-layout{display:grid;grid-template-columns:1fr 200px;gap:20px}
+@media(max-width:640px){.quiz-layout{grid-template-columns:1fr}}
+
+/* SORU ALANI */
+.question-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;animation:fadeIn .4s ease}
+.q-week{font-size:9px;color:var(--accent);letter-spacing:2px;font-weight:700;margin-bottom:6px}
+.q-progress{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.q-prog-bar{flex:1;height:4px;background:var(--border);border-radius:2px;overflow:hidden}
+.q-prog-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .5s ease}
+.q-num{font-size:11px;color:var(--muted)}
+.q-konu{display:inline-block;background:#1e1e2a;color:var(--accent);font-size:9px;font-weight:700;padding:3px 10px;border-radius:4px;letter-spacing:1px;margin-bottom:12px}
+.q-text{font-size:15px;font-weight:600;line-height:1.7;margin-bottom:20px;color:var(--text)}
+.q-options{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.q-opt{background:#0a0a0f;border:1px solid var(--border);border-radius:10px;padding:14px 16px;cursor:pointer;font-size:13px;color:#c8c5c0;display:flex;align-items:center;gap:12px;transition:all .2s;font-family:inherit}
+.q-opt:hover{border-color:var(--accent);color:var(--accent);background:#0d0d0a}
+.q-opt.selected{border-color:var(--accent);background:#1a1800;color:var(--accent)}
+.q-opt.correct{border-color:var(--green);background:rgba(34,197,94,.1);color:var(--green)}
+.q-opt.wrong{border-color:var(--red);background:rgba(239,68,68,.1);color:var(--red)}
+.opt-num{width:28px;height:28px;border-radius:50%;border:1.5px solid currentColor;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
+.q-actions{display:flex;justify-content:space-between;align-items:center}
+.q-disclaimer{font-size:9px;color:var(--muted);opacity:.7}
+.btn-next{background:var(--accent);color:#0a0a0f;border:none;border-radius:8px;padding:10px 24px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;transition:opacity .2s}
+.btn-next:hover{opacity:.85}
+.btn-next:disabled{opacity:.4;cursor:not-allowed}
+.q-dots{display:flex;gap:8px;justify-content:center;padding:16px 0 0}
+.q-dot{width:10px;height:10px;border-radius:50%;background:var(--border);transition:all .3s}
+.q-dot.done{background:var(--green)}
+.q-dot.active{background:var(--accent);transform:scale(1.2)}
+
+/* SIDEBAR */
+.sidebar{display:flex;flex-direction:column;gap:12px}
+.sb-widget{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:14px}
+.sb-title{font-size:9px;color:var(--muted);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+.sb-row{display:flex;justify-content:space-between;align-items:center;padding:5px 0;border-bottom:1px solid var(--border)}
+.sb-row:last-child{border-bottom:none}
+.sb-name{font-size:11px;color:var(--muted)}
+.sb-price{font-size:13px;font-weight:700;color:var(--text)}
+.sb-chg{font-size:10px;font-weight:600}
+.up{color:var(--green)}
+.dn{color:var(--red)}
+.sent-bar{height:6px;background:var(--border);border-radius:3px;overflow:hidden;margin:6px 0}
+.sent-fill{height:100%;background:var(--accent);border-radius:3px;transition:width .5s}
+
+/* MASKOT */
+.maskot-wrap{position:relative;text-align:center}
+.maskot-bubble{background:#1a2a20;border:1px solid #2a4a30;border-radius:12px 12px 12px 0;padding:10px 12px;font-size:11px;color:#b0c8b8;line-height:1.6;margin-bottom:10px;display:inline-block;text-align:left;animation:whisper 6s ease-in-out infinite}
+.maskot-anim{animation:floatMaskot 3s ease-in-out infinite;display:inline-block}
+
+/* SONUÇ EKRANI */
+.result-screen{display:none;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:32px;text-align:center;animation:fadeIn .5s ease}
+.result-score{font-size:64px;font-weight:900;color:var(--accent);line-height:1}
+.result-label{font-size:16px;color:var(--muted);margin:8px 0 20px}
+.result-bars{display:flex;gap:8px;margin:16px 0}
+.r-bar{flex:1;border-radius:8px;padding:12px 8px;text-align:center}
+.r-bar-label{font-size:9px;color:var(--muted);margin-bottom:4px}
+.r-bar-val{font-size:20px;font-weight:700}
+.share-btn{background:var(--accent);color:#0a0a0f;border:none;border-radius:8px;padding:12px 28px;font-size:13px;font-weight:700;cursor:pointer;font-family:inherit;margin:8px 4px}
+.retry-btn{background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:12px 28px;font-size:13px;cursor:pointer;font-family:inherit;margin:8px 4px}
+</style>
+</head>
+<body>
+<div class="quiz-wrap">
+
+  <!-- HEADER -->
+  <div class="quiz-header">
+    <div class="quiz-logo" onclick="window.location.href='/'">Anlık<span>Haber</span></div>
+    <div class="quiz-title">Plus Quiz</div>
+    <button class="back-btn" onclick="window.location.href='/'">← Ana Sayfa</button>
+  </div>
+
+  <!-- HERO -->
+  <div class="quiz-hero">
+    <svg class="hero-waves" viewBox="0 0 900 120" preserveAspectRatio="none">
+      <path d="M0,60 Q225,20 450,60 Q675,100 900,60" fill="none" stroke="#e8c84a" stroke-width="1.5" opacity=".3" stroke-dasharray="8 4" style="animation:goldwave 3s linear infinite;stroke-dasharray:8 4"/>
+      <path d="M0,35 Q300,75 600,35 Q750,15 900,35" fill="none" stroke="#e8c84a" stroke-width=".7" opacity=".15" stroke-dasharray="5 5" style="animation:goldwave 4s linear infinite reverse"/>
+    </svg>
+    <div class="scan-line"></div>
+    <div class="hero-title">RİTMİ BELİRLE</div>
+    <div class="hero-sub">Bu haftanın piyasa sorularını yanıtla · Haftalık finans zekası testi</div>
+  </div>
+
+  <!-- QUIZ LAYOUT -->
+  <div class="quiz-layout">
+
+    <!-- SOL: SORULAR -->
+    <div>
+      <!-- AKTİF SORU -->
+      <div class="question-card" id="questionCard">
+        <div class="q-week">BU HAFTA · <span id="qKonu">ALTIN & DÖVIZ</span></div>
+        <div class="q-progress">
+          <div class="q-prog-bar"><div class="q-prog-fill" id="progFill" style="width:20%"></div></div>
+          <div class="q-num"><span id="qCurrent">1</span>/5</div>
+        </div>
+        <div class="q-konu" id="qKonuBadge">ALTIN</div>
+        <div class="q-text" id="qText">Yükleniyor...</div>
+        <div class="q-options" id="qOptions"></div>
+        <div class="q-actions">
+          <span class="q-disclaimer">Bu quiz yatırım tavsiyesi değildir.</span>
+          <button class="btn-next" id="btnNext" disabled onclick="sonrakiSoru()">Sonraki →</button>
+        </div>
+        <div class="q-dots" id="qDots"></div>
+      </div>
+
+      <!-- SONUÇ EKRANI -->
+      <div class="result-screen" id="resultScreen">
+        <div style="font-size:32px;margin-bottom:12px">🎯</div>
+        <div class="result-score" id="resultScore">0</div>
+        <div class="result-label" id="resultLabel">Sonuçlar hesaplanıyor...</div>
+        <div class="result-bars">
+          <div class="r-bar" style="background:rgba(34,197,94,.1)">
+            <div class="r-bar-label">Katılıyorum</div>
+            <div class="r-bar-val" id="rKati" style="color:var(--green)">—</div>
+          </div>
+          <div class="r-bar" style="background:rgba(239,68,68,.1)">
+            <div class="r-bar-label">Katılmıyorum</div>
+            <div class="r-bar-val" id="rKatil" style="color:var(--red)">—</div>
+          </div>
+          <div class="r-bar" style="background:rgba(107,107,128,.1)">
+            <div class="r-bar-label">Kararsızım</div>
+            <div class="r-bar-val" id="rKarar" style="color:var(--muted)">—</div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--muted);margin-bottom:20px;line-height:1.6" id="resultAciklama"></div>
+        <button class="share-btn" onclick="xPaylas()">🐦 X'te Paylaş</button>
+        <button class="retry-btn" onclick="tekrarBasla()">↺ Tekrar Başla</button>
+        <button class="retry-btn" onclick="window.location.href='/'">← Ana Sayfa</button>
+      </div>
+    </div>
+
+    <!-- SAĞ: SIDEBAR -->
+    <div class="sidebar">
+
+      <!-- CANLI KURLAR -->
+      <div class="sb-widget">
+        <div class="sb-title">Canlı Piyasalar</div>
+        <div class="sb-row">
+          <span class="sb-name">BTC</span>
+          <div style="text-align:right"><div class="sb-price" id="sb-btc">—</div><div class="sb-chg" id="sb-btc-c">—</div></div>
+        </div>
+        <div class="sb-row">
+          <span class="sb-name">ALTIN</span>
+          <div style="text-align:right"><div class="sb-price" id="sb-gold">—</div><div class="sb-chg up">canlı</div></div>
+        </div>
+        <div class="sb-row">
+          <span class="sb-name">USD/TRY</span>
+          <div style="text-align:right"><div class="sb-price" id="sb-usd">—</div><div class="sb-chg" id="sb-usd-c">—</div></div>
+        </div>
+        <div class="sb-row">
+          <span class="sb-name">EUR/TRY</span>
+          <div style="text-align:right"><div class="sb-price" id="sb-eur">—</div><div class="sb-chg">canlı</div></div>
+        </div>
+      </div>
+
+      <!-- DUYGU ENDEKSİ -->
+      <div class="sb-widget">
+        <div class="sb-title">AI Duygu Endeksi</div>
+        <div style="font-size:22px;font-weight:700;color:var(--accent)" id="sb-sent-skor">—</div>
+        <div class="sent-bar"><div class="sent-fill" id="sb-sent-bar" style="width:50%"></div></div>
+        <div style="font-size:11px;color:var(--muted)" id="sb-sent-label">Yükleniyor...</div>
+      </div>
+
+      <!-- MASKOT -->
+      <div class="sb-widget">
+        <div class="maskot-wrap">
+          <div class="maskot-bubble" id="maskotBubble">Şşş... Bu haftanın gizli ipucu: Piyasaları takip eden kazanır!</div>
+          <div class="maskot-anim">
+            <svg viewBox="0 0 80 105" width="72" height="95">
+              <ellipse cx="40" cy="70" rx="26" ry="28" fill="#1e4a32"/>
+              <ellipse cx="40" cy="67" rx="22" ry="24" fill="#22573a"/>
+              <ellipse cx="29" cy="91" rx="10" ry="7" fill="#1a3a2a"/>
+              <ellipse cx="51" cy="91" rx="10" ry="7" fill="#1a3a2a"/>
+              <ellipse cx="14" cy="58" rx="7" ry="13" fill="#1a3a2a" transform="rotate(-15 14 58)"/>
+              <ellipse cx="66" cy="58" rx="7" ry="13" fill="#1a3a2a" transform="rotate(15 66 58)"/>
+              <circle cx="70" cy="46" r="9" fill="#e8c84a"/>
+              <circle cx="70" cy="46" r="7" fill="#f0d060"/>
+              <text x="70" y="50" text-anchor="middle" font-size="8" font-weight="700" fill="#8b6914">₺</text>
+              <ellipse cx="40" cy="36" rx="26" ry="24" fill="#22573a"/>
+              <polygon points="22,20 16,2 30,18" fill="#e8c84a"/>
+              <polygon points="58,20 64,2 50,18" fill="#e8c84a"/>
+              <ellipse cx="31" cy="34" rx="9" ry="10" fill="#f5f0d0"/>
+              <ellipse cx="49" cy="34" rx="9" ry="10" fill="#f5f0d0"/>
+              <ellipse cx="31.5" cy="34.5" rx="6" ry="7" fill="#1a3a00"/>
+              <ellipse cx="49.5" cy="34.5" rx="6" ry="7" fill="#1a3a00"/>
+              <circle cx="33" cy="31" r="2" fill="#fff"/>
+              <circle cx="51" cy="31" r="2" fill="#fff"/>
+              <path d="M31 50 Q40 57 49 50" stroke="#143020" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <rect x="35" y="50" width="5" height="4" rx="1" fill="#f5f0d0"/>
+              <rect x="42" y="50" width="5" height="4" rx="1" fill="#f5f0d0"/>
+              <!-- Parmak ağza götürme -->
+              <ellipse cx="14" cy="45" rx="4" ry="7" fill="#1a3a2a" transform="rotate(-30 14 45)"/>
+              <circle cx="11" cy="38" r="3.5" fill="#1a3a2a"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+const API = 'https://anlikhaber-backend-production.up.railway.app';
+let sorular = [];
+let mevcutSoru = 0;
+let cevaplar = { katiliyorum: 0, katilmiyorum: 0, kararsizim: 0 };
+let seciliCevap = null;
+
+const maskotIpuclari = [
+  'Şşş... Bu haftaki gizli ipucu: Piyasaları takip eden kazanır!',
+  'Altın genellikle belirsizlik dönemlerinde yükselir. Bunu biliyor muydun?',
+  'Bitcoin halving sonrası geçmiş veriler ilginç! Araştır...',
+  'Dolar/TL paritesini etkileyen 3 faktör: enflasyon, faiz, jeopolitik.',
+  'Emtia fiyatları küresel büyüme beklentilerini yansıtır.',
+];
+
+const konuEmoji = { altin:'🥇', btc:'₿', usd:'💵', eur:'💶', emtia:'🛢', faiz:'📈' };
+
+async function soruYukle() {
+  try {
+    const r = await fetch(API + '/api/anket/aktif');
+    const anket = await r.json();
+
+    if(!anket) {
+      // Anket yoksa örnek soru göster
+      sorular = [{
+        soru: 'Bu haftanın anketi henüz hazırlanıyor. Yakında burada olacak!',
+        konu: 'finans',
+        id: null
+      }];
+    } else {
+      sorular = [anket]; // Aktif anketi göster
+    }
+
+    soruGoster();
+    dotlarGuncelle();
+  } catch(e) {
+    document.getElementById('qText').textContent = 'Sorular yüklenirken hata oluştu. Lütfen sayfayı yenileyin.';
+  }
+}
+
+function soruGoster() {
+  const s = sorular[mevcutSoru];
+  if(!s) return;
+
+  document.getElementById('qText').textContent = s.soru;
+  document.getElementById('qKonuBadge').textContent = (s.konu||'finans').toUpperCase();
+  document.getElementById('qKonu').textContent = (s.konu||'finans').toUpperCase();
+  document.getElementById('qCurrent').textContent = mevcutSoru + 1;
+  document.getElementById('progFill').style.width = ((mevcutSoru + 1) / sorular.length * 100) + '%';
+
+  const secenekler = [
+    { key: 'katiliyorum', label: 'Katılıyorum', num: '1' },
+    { key: 'katilmiyorum', label: 'Katılmıyorum', num: '2' },
+    { key: 'kararsizim', label: 'Kararsızım', num: '3' }
+  ];
+
+  document.getElementById('qOptions').innerHTML = secenekler.map(o =>
+    '<div class="q-opt" id="opt-' + o.key + '" onclick="secimYap(\'' + o.key + '\')">' +
+    '<div class="opt-num">' + o.num + '</div>' + o.label + '</div>'
+  ).join('');
+
+  seciliCevap = null;
+  document.getElementById('btnNext').disabled = true;
+
+  // Maskot ipucu değiştir
+  const idx = Math.floor(Math.random() * maskotIpuclari.length);
+  document.getElementById('maskotBubble').textContent = maskotIpuclari[idx];
+}
+
+function secimYap(key) {
+  seciliCevap = key;
+  document.querySelectorAll('.q-opt').forEach(el => el.classList.remove('selected'));
+  document.getElementById('opt-' + key).classList.add('selected');
+  document.getElementById('btnNext').disabled = false;
+}
+
+async function sonrakiSoru() {
+  if(!seciliCevap) return;
+  cevaplar[seciliCevap]++;
+
+  // Oy gönder
+  const s = sorular[mevcutSoru];
+  if(s && s.id) {
+    try {
+      await fetch(API + '/api/anket/' + s.id + '/oy', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({ oy: seciliCevap })
+      });
+    } catch(e) {}
+  }
+
+  dotlarGuncelle();
+  mevcutSoru++;
+
+  if(mevcutSoru >= sorular.length) {
+    sonucGoster();
+  } else {
+    soruGoster();
+  }
+}
+
+function sonucGoster() {
+  document.getElementById('questionCard').style.display = 'none';
+  const rs = document.getElementById('resultScreen');
+  rs.style.display = 'block';
+
+  const toplam = cevaplar.katiliyorum + cevaplar.katilmiyorum + cevaplar.kararsizim;
+  const pKati = toplam ? Math.round(cevaplar.katiliyorum / toplam * 100) : 0;
+  const pKatil = toplam ? Math.round(cevaplar.katilmiyorum / toplam * 100) : 0;
+  const pKarar = 100 - pKati - pKatil;
+
+  document.getElementById('resultScore').textContent = toplam + ' Soru';
+  document.getElementById('resultLabel').textContent = 'Tamamlandı! Görüşlerin kaydedildi.';
+  document.getElementById('rKati').textContent = '%' + pKati;
+  document.getElementById('rKatil').textContent = '%' + pKatil;
+  document.getElementById('rKarar').textContent = '%' + pKarar;
+
+  const dominantKey = pKati >= pKatil && pKati >= pKarar ? 'katiliyorum' :
+                      pKatil >= pKarar ? 'katilmiyorum' : 'kararsizim';
+  const aciklamalar = {
+    katiliyorum: 'Bu hafta piyasaya iyimser baktın. Olumlu haber akışı seni etkilemiş olabilir.',
+    katilmiyorum: 'Bu hafta temkinli bir duruş sergiledik. Riskten kaçınan bir yatırımcı profili.',
+    kararsizim: 'Belirsizlik zamanlarında en doğru yanıt bazen kararsızım olmaktır!'
+  };
+  document.getElementById('resultAciklama').textContent = aciklamalar[dominantKey] + ' Bu analiz yatırım tavsiyesi değildir.';
+}
+
+function xPaylas() {
+  const metin = 'AnlıkHaber Plus Quiz\'i tamamladım! ' +
+    'Katılıyorum: %' + Math.round(cevaplar.katiliyorum / Math.max(1, cevaplar.katiliyorum + cevaplar.katilmiyorum + cevaplar.kararsizim) * 100) +
+    ' #anlikhaber #plusquiz #finans anlikhaber.com/plus-quiz';
+  window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(metin));
+}
+
+function tekrarBasla() {
+  mevcutSoru = 0;
+  cevaplar = { katiliyorum: 0, katilmiyorum: 0, kararsizim: 0 };
+  document.getElementById('resultScreen').style.display = 'none';
+  document.getElementById('questionCard').style.display = 'block';
+  soruGoster();
+  dotlarGuncelle();
+}
+
+function dotlarGuncelle() {
+  const dots = document.getElementById('qDots');
+  dots.innerHTML = sorular.map((_, i) =>
+    '<div class="q-dot ' + (i < mevcutSoru ? 'done' : i === mevcutSoru ? 'active' : '') + '"></div>'
+  ).join('');
+}
+
+// Piyasa verileri
+async function piyasaYukle() {
+  try {
+    const r = await fetch('https://api.binance.com/api/v3/ticker/24hr?symbols=["BTCUSDT"]');
+    const data = await r.json();
+    const btc = data[0];
+    const price = parseFloat(btc.lastPrice);
+    const chg = parseFloat(btc.priceChangePercent);
+    document.getElementById('sb-btc').textContent = '$' + Math.round(price).toLocaleString('tr-TR');
+    const chgEl = document.getElementById('sb-btc-c');
+    chgEl.textContent = (chg >= 0 ? '▲ +' : '▼ ') + chg.toFixed(2) + '%';
+    chgEl.className = 'sb-chg ' + (chg >= 0 ? 'up' : 'dn');
+  } catch(e) {}
+
+  try {
+    const r = await fetch('https://api.frankfurter.app/latest?from=USD&to=TRY,EUR');
+    const d = await r.json();
+    if(d.rates) {
+      if(d.rates.TRY) document.getElementById('sb-usd').textContent = d.rates.TRY.toFixed(2);
+      if(d.rates.TRY && d.rates.EUR) document.getElementById('sb-eur').textContent = (d.rates.TRY / d.rates.EUR).toFixed(2);
+    }
+  } catch(e) {}
+
+  try {
+    const r = await fetch('https://api.frankfurter.app/latest?from=XAU&to=USD');
+    const d = await r.json();
+    if(d.rates && d.rates.USD) {
+      const gold = Math.round(1 / d.rates.USD);
+      document.getElementById('sb-gold').textContent = '$' + gold.toLocaleString('tr-TR');
+    }
+  } catch(e) {}
+}
+
+async function sentimentYukle() {
+  try {
+    const r = await fetch(API + '/api/sentiment');
+    const s = await r.json();
+    document.getElementById('sb-sent-skor').textContent = (s.skor||50) + '/100';
+    document.getElementById('sb-sent-bar').style.width = (s.skor||50) + '%';
+    document.getElementById('sb-sent-label').textContent = s.etiket || 'Nötr';
+    const renk = s.skor >= 65 ? '#22c55e' : s.skor <= 35 ? '#ef4444' : '#e8c84a';
+    document.getElementById('sb-sent-skor').style.color = renk;
+    document.getElementById('sb-sent-bar').style.background = renk;
+  } catch(e) {}
+}
+
+// Başlat
+soruYukle();
+piyasaYukle();
+sentimentYukle();
+setInterval(piyasaYukle, 60000);
+setInterval(sentimentYukle, 60000);
+</script>
+</body>
+</html>

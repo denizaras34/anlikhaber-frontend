@@ -1,0 +1,10 @@
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: *
+Allow: /
+Allow: /haber/
+Disallow: /admin
+Disallow: /admin.html
+
+Sitemap: https://anlikhaber.com/sitemap.xml
