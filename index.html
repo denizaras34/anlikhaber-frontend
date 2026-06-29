@@ -825,6 +825,7 @@ footer{border-top:1px solid var(--border);padding:24px 32px;margin-top:0}
     <div id="detaySentimentWrap" style="margin-bottom:16px"></div>
     <div class="detay-ad" onclick="adClick('Haber içi 728x90')"><strong>728×90 Haber İçi Reklam</strong><span>reklam@anlikhaber.com</span></div>
     <div class="detay-content" id="detayContent"><p>Yükleniyor...</p></div>
+    <div id="detayYorumWrap" style="margin:16px 0"></div>
     <div class="detay-kaynak">📌 <strong>Kaynak:</strong> Bu haber <span id="detayKaynakAdi">—</span> kaynağından derlenerek hazırlanmıştır. <a href="#" id="detayKaynakLink" target="_blank">Orijinal haberi oku →</a></div>
     <div class="detay-share">
       <button class="share-btn" onclick="xPaylas()">🐦 X'te Paylaş</button>
@@ -1373,6 +1374,25 @@ function renderDetay(h) {
     document.getElementById('detayContent').innerHTML = 
       '<p style="color:var(--muted)">' + (h.description || 'Bu haber için detaylı içerik mevcut değil.') + '</p>' +
       '<p><a href="' + (h.orijinalUrl||h.kaynakUrl||'#') + '" target="_blank" style="color:var(--accent);font-weight:500">Haberin tamamını ' + (h.kaynak||'kaynakta') + ' oku →</a></p>';
+  }
+
+  // AnlıkHaber Yorumu — backend h.yorum gönderirse göster
+  const yorumWrap = document.getElementById('detayYorumWrap');
+  if(yorumWrap) {
+    if(h.yorum) {
+      const y = h.yorum;
+      yorumWrap.innerHTML =
+        '<div style="background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:16px">' +
+        '<div style="font-size:13px;font-weight:600;color:var(--accent);margin-bottom:10px">📝 AnlıkHaber Yorumu</div>' +
+        '<p style="font-size:14px;line-height:1.7;margin-bottom:12px">' + (y.giris||'') + '</p>' +
+        '<div style="margin-bottom:8px"><strong>📈 Türk yatırımcı için etki:</strong> ' + (y.turkYatirimciEtki||'') + '</div>' +
+        '<div style="margin-bottom:8px"><strong>⚠️ Riskler:</strong> ' + (y.riskler||'') + '</div>' +
+        '<div style="margin-bottom:8px"><strong>💡 Fırsatlar:</strong> ' + (y.firsatlar||'') + '</div>' +
+        '<div style="font-size:11px;color:var(--muted);margin-top:10px;font-style:italic">' + (y.uyari||'Bu yorum yatırım tavsiyesi değildir.') + '</div>' +
+        '</div>';
+    } else {
+      yorumWrap.innerHTML = '';
+    }
   }
 }
 
