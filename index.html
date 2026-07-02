@@ -2007,7 +2007,7 @@ function drawGauge(canvas, skor) {
   ctx.clearRect(0, 0, w, h);
 
   const cx = w / 2, cy = h - 10;
-  const r = h - 20;
+  const r = Math.min(h - 20, w / 2 - 14);
 
   // Arka plan yay
   const gradient = ctx.createLinearGradient(0, 0, w, 0);
